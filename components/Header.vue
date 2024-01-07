@@ -7,7 +7,7 @@ const drawer = ref(false)
 </script>
 
 <template>
-  <v-app-bar :elevation="0" :flat="true" app color="background" height="70">
+  <v-app-bar :flat="true" app elevation="0" height="70">
     <template #prepend>
       <Logo/>
     </template>

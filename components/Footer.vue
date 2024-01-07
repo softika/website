@@ -3,7 +3,7 @@ import Logo from "~/components/Logo.vue"
 </script>
 
 <template>
-  <v-card border="0" color="background">
+  <v-card border="0" color="background" elevation="0">
     <v-container class="text-center py-12">
       <div class="d-inline-block">
         <Logo/>
@@ -45,7 +45,7 @@ import Logo from "~/components/Logo.vue"
 
       <div class="text-center mt-10">
         All rights are reserved &copy;
-        {{ new Date().getFullYear() }}, Deadpan Team
+        {{ new Date().getFullYear() }}, Softika Team
       </div>
     </v-container>
   </v-card>

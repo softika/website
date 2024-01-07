@@ -5,7 +5,7 @@
   <v-app>
     <Header/>
     <v-main>
-      <v-container :fluid="true">
+      <v-container :fluid="true" class="w-100 h-100">
         <slot/>
       </v-container>
     </v-main>
