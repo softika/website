@@ -36,11 +36,17 @@ defineProps({
 
 <template>
   <div id="div-banner" class="banner">
+    <!--   background variations-->
     <div v-if="bgVariation==='var1'" id="banner-background" class="div-background"/>
     <div v-if="bgVariation==='var1'" id="banner-background2" class="div-background"/>
     <div v-if="bgVariation==='var2'" id="banner-background-var2" class="div-background"/>
     <div v-if="bgVariation==='var2'" id="banner-background2-var2" class="div-background"/>
-    <div id="banner" class="panel">
+    <div v-if="bgVariation==='var3'" id="banner-background-var3" class="div-background"/>
+    <div v-if="bgVariation==='var3'" id="banner-background2-var3" class="div-background"/>
+    <div v-if="bgVariation==='var4'" id="banner-background-var4" class="div-background"/>
+    <div v-if="bgVariation==='var4'" id="banner-background2-var4" class="div-background"/>
+
+    <div v-if="title" id="banner" class="panel">
       <v-row align="center" justify="center">
         <v-col cols="12">
           <div id="banner-title" class="text-center">
@@ -91,7 +97,7 @@ defineProps({
   background: #40e0d0;
   bottom: -6rem;
   height: 5rem;
-  opacity: .5;
+  opacity: .8;
   transform: skewY(-5deg);
 }
 
@@ -108,7 +114,41 @@ defineProps({
   background: #40e0d0;
   bottom: -6rem;
   height: 5rem;
-  opacity: .5;
+  opacity: .8;
+  transform: skewY(5deg);
+}
+
+#banner-background-var3 {
+  display: block;
+  background: #40e0d0;
+  bottom: -2rem;
+  height: 12rem;
+  transform: skewY(-5deg);
+}
+
+#banner-background2-var3 {
+  display: block;
+  background: #e04050;
+  bottom: -6rem;
+  height: 5rem;
+  opacity: .8;
+  transform: skewY(-5deg);
+}
+
+#banner-background-var4 {
+  display: block;
+  background: #40e0d0;
+  bottom: -2rem;
+  height: 12rem;
+  transform: skewY(5deg);
+}
+
+#banner-background2-var4 {
+  display: block;
+  background: #e04050;
+  bottom: -6rem;
+  height: 5rem;
+  opacity: .8;
   transform: skewY(5deg);
 }
 

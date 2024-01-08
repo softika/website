@@ -23,19 +23,16 @@ function clearMessage() {
 </script>
 
 <template>
-  <v-card class="py-16 py-md-16 py-sm-16 py-lg-16 ma-4" variant="text">
-    <v-row justify="center">
-      <v-col cols="12">
-        <h3 class="text-center text-h3 mb-4">
-          <strong class="text-primary">Upcoming project?</strong>
-        </h3>
-      </v-col>
-      <v-col cols="12">
-        <h5 class="text-center text-h5 mb-4">
-          <strong>We'd love to work with you.</strong>
-        </h5>
-      </v-col>
-    </v-row>
+  <v-row align="center" class="py-16 py-md-16 py-sm-16 py-lg-16 " justify="center">
+    <v-col cols="12">
+      <MyBanner
+          bg-variation="var2"
+          text="We'd love to work with you. Send us a message."
+          title="Upcoming project?"
+      />
+    </v-col>
+  </v-row>
+  <v-card class=" ma-4" variant="text">
     <v-row class="px-md-16 px-lg-16 px-sm-0" justify="center">
       <v-col cols="12" md="6" sm="12">
         <v-text-field
@@ -92,4 +89,17 @@ function clearMessage() {
       </v-col>
     </v-row>
   </v-card>
+  <v-row align="center" class="py-16 py-md-16 py-sm-16 py-lg-16 " justify="center">
+    <v-col cols="12">
+      <MyBanner
+          bg-variation="var1"
+      />
+    </v-col>
+  </v-row>
 </template>
+
+<style lang="css" scoped>
+.v-card {
+  z-index: 2;
+}
+</style>
