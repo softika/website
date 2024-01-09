@@ -70,7 +70,7 @@ import Tech from "~/components/Tech.vue";
           bg-variation="var4"
           button-text="Meet the team"
           route-path="/team"
-          title="Who we are?"
+          title="Let us tell you who we are."
       />
     </v-col>
   </v-row>
