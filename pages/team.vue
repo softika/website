@@ -31,19 +31,12 @@ const {mdAndUp} = useDisplay()
                     Filip
                   </h3>
                   <span class="text-h6 text-center text-grey-darken-1"><b>Full-Stack Developer</b></span>
-                  <div class="text-center text-medium-emphasis">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et
-                    dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea
-                    commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit
-                    anim id
-                    est laborum.
+                  <div class="text-center text-medium-emphasis text-body-1">
+                    With a rich tapestry of 15 years programming, Filip is a professional who is
+                    proficient in a myriad of languages, with a special affinity for GO and Java. His true joy lies in
+                    the complete coding process, from conceptual design through to meticulous implementation.
+                    As a dedicated and passionate individual, He brings a wealth of
+                    expertise to any project, ensuring that every line of code reflects genuine love for the craft.
                   </div>
                 </v-col>
               </v-row>
@@ -81,19 +74,13 @@ const {mdAndUp} = useDisplay()
                     Nikola
                   </h3>
                   <span class="text-h6 text-center text-grey-darken-1"><b>Full-Stack & Mobile Developer</b></span><br>
-                  <div class="text-center text-medium-emphasis">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et
-                    dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea
-                    commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit
-                    anim id
-                    est laborum.
+                  <div class="text-center text-medium-emphasis text-body-1">
+                    Driven by a passion for innovation and armed with 16 years of hands-on experience, Nikola is a
+                    seasoned Full-stack and Mobile Engineer. Throughout his career, he has been at the forefront of
+                    technological advancements, contributing to the development and success of diverse projects. His
+                    expertise encompasses the entire software development lifecycle, from concept to deployment With a
+                    keen eye for detail and a commitment to staying ahead of industry trends, he is dedicated to
+                    deliver cutting-edge solutions that exceed expectations.
                   </div>
                 </v-col>
               </v-row>

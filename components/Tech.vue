@@ -143,14 +143,14 @@
         <!-- STORAGE -->
         <v-carousel-item>
           <v-container>
-            <v-row class="pa-2 ma-2 pa-lg-0 ma-lg-0 pa-md-0 ma-md-0 justify-center align-center">
+            <v-row class="pa-2 ma-2 pa-lg-4 ma-lg-4 pa-md-4 ma-md-4 justify-center align-center">
               <v-col cols="12">
                 <div class="text-center text-h3 font-weight-bold">
                   Data
                 </div>
               </v-col>
             </v-row>
-            <v-row class="pa-2 ma-2 pa-lg-4 ma-lg-4 pa-md-4 ma-md-4 align-content-center justify-center align-center">
+            <v-row class="pa-2 ma-2 justify-center align-center">
               <v-col align="center" lg="3" md="3" sm="3" xs="3">
                 <v-img
                     alt="Postgres"
