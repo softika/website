@@ -2,6 +2,22 @@
   <v-container>
     <v-card :flat="true" color="transparent" elevation="5">
       <v-carousel height="400" hide-delimiter-background>
+        <template v-slot:prev="{ props }">
+          <v-btn
+              color="black"
+              icon="mdi-chevron-left"
+              variant="text"
+              @click="props.onClick"
+          />
+        </template>
+        <template v-slot:next="{ props }">
+          <v-btn
+              color="black"
+              icon="mdi-chevron-right"
+              variant="text"
+              @click="props.onClick"
+          />
+        </template>
         <!-- FRONTEND -->
         <v-carousel-item>
           <v-container>
@@ -78,14 +94,14 @@
         <!-- BACKEND -->
         <v-carousel-item>
           <v-container>
-            <v-row class="pa-2 ma-2 pa-lg-0 ma-lg-0 pa-md-0 ma-md-0 justify-center align-center">
+            <v-row class="pa-1 ma-1 pa-lg-0 ma-lg-0 pa-md-0 ma-md-0 justify-center align-center">
               <v-col cols="12">
                 <div class="text-center text-h3 font-weight-bold">
                   Backend
                 </div>
               </v-col>
             </v-row>
-            <v-row class="pa-2 ma-2 justify-center align-center">
+            <v-row class="justify-center align-center">
               <v-col align="center" lg="4" md="4" sm="4" xs="4">
                 <v-img
                     alt="GO"
@@ -111,7 +127,7 @@
                 />
               </v-col>
             </v-row>
-            <v-row class="pa-2 ma-2 justify-center align-center">
+            <v-row class="justify-center align-center">
               <v-col align="center" lg="4" md="4" sm="4" xs="4">
                 <v-img
                     alt="Spring"
@@ -143,7 +159,7 @@
         <!-- STORAGE -->
         <v-carousel-item>
           <v-container>
-            <v-row class="pa-2 ma-2 pa-lg-4 ma-lg-4 pa-md-4 ma-md-4 justify-center align-center">
+            <v-row class="pa-lg-0 ma-lg-0 pa-md-0 ma-md-0 justify-center align-center">
               <v-col cols="12">
                 <div class="text-center text-h3 font-weight-bold">
                   Data
@@ -151,7 +167,7 @@
               </v-col>
             </v-row>
             <v-row class="pa-2 ma-2 justify-center align-center">
-              <v-col align="center" lg="3" md="3" sm="3" xs="3">
+              <v-col align="center" lg="4" md="4" sm="4" xs="4">
                 <v-img
                     alt="Postgres"
                     max-height="100"
@@ -159,7 +175,7 @@
                     src="@/assets/svgs/postgresql.svg"
                 />
               </v-col>
-              <v-col align="center" lg="3" md="3" sm="3" xs="3">
+              <v-col align="center" lg="4" md="4" sm="4" xs="4">
                 <v-img
                     alt="MySQL"
                     max-height="100"
@@ -167,7 +183,9 @@
                     src="@/assets/svgs/mysql.svg"
                 />
               </v-col>
-              <v-col align="center" lg="3" md="3" sm="3" xs="3">
+            </v-row>
+            <v-row class="pa-2 ma-2 justify-center align-center">
+              <v-col align="center" lg="4" md="4" sm="4" xs="4">
                 <v-img
                     alt="Redis"
                     max-height="100"
@@ -175,7 +193,7 @@
                     src="@/assets/svgs/redis.svg"
                 />
               </v-col>
-              <v-col align="center" lg="3" md="3" sm="3" xs="3">
+              <v-col align="center" lg="4" md="4" sm="4" xs="4">
                 <v-img
                     alt="MongoDB"
                     max-height="100"
@@ -197,7 +215,7 @@
                 </div>
               </v-col>
             </v-row>
-            <v-row class="pa-2 ma-2 justify-center align-center">
+            <v-row class="justify-center align-center">
               <v-col align="center" lg="4" md="4" sm="4" xs="4">
                 <v-img
                     alt="Docker"
@@ -214,6 +232,8 @@
                     src="@/assets/svgs/kubernetes.svg"
                 />
               </v-col>
+            </v-row>
+            <v-row class="justify-center align-center">
               <v-col align="center" lg="4" md="4" sm="4" xs="4">
                 <v-img
                     alt="AWS"
