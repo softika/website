@@ -1,5 +1,5 @@
 <template>
-  <v-card :flat="true" color="transparent">
+  <v-card :flat="true" class="pa-4 pa-md-16" color="transparent">
     <v-container>
       <v-row align="center" justify="space-around">
         <v-col cols="12" md="6">
@@ -11,7 +11,7 @@
           />
         </v-col>
 
-        <v-col cols="12" md="5">
+        <v-col cols="12" md="6">
           <h1 class="text-h5 mx-auto mb-4 font-weight-bold">
             Mobile Apps
           </h1>

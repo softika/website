@@ -2,7 +2,7 @@
   <v-card :flat="true" class="pa-4 pa-md-16" color="transparent">
     <v-container>
       <v-row align="center" justify="space-between">
-        <v-col cols="12" md="5">
+        <v-col cols="12" md="6">
           <h1 class="text-h5 mx-auto mb-4 font-weight-bold">
             API Backend & Frontend
           </h1>
@@ -23,7 +23,7 @@
         <v-col cols="12" md="6">
           <v-img
               alt="saas solutions"
-              class="rounded elevation-10"
+              class="rounded elevation-5"
               height="300"
               src="@/assets/imgs/api-t-bg.png"
           />
@@ -33,7 +33,8 @@
   </v-card>
 </template>
 
-<script lang="ts" setup/>
+<script lang="ts" setup>
+</script>
 
 <style lang="css" scoped>
 .v-card {
