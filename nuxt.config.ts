@@ -2,9 +2,6 @@
 import vuetify, {transformAssetUrls} from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
-    // reCAPTCHA
-    // site key // 6LeRoUspAAAAAC_Th9MTLNAGkuZVwycKKT7HM1_b
-    // secret key // 6LeRoUspAAAAAEQ_jeedZUV8-bNqUPux9ItCj310
     app: {
         head: {
             charset: 'utf-8',
@@ -33,6 +30,7 @@ export default defineNuxtConfig({
         transpile: ['vuetify'],
     },
     modules: [
+        'vue-recaptcha/nuxt',
         (_options, nuxt) => {
             nuxt.hooks.hook('vite:extendConfig', (config) => {
                 // @ts-expect-error
@@ -49,10 +47,14 @@ export default defineNuxtConfig({
     },
     runtimeConfig: {
         public: {
-            // recaptcha: {
-            //     v2SiteKey: '6LeRoUspAAAAAC_Th9MTLNAGkuZVwycKKT7HM1_b',
-            //     v3SiteKey: '6LeRoUspAAAAAC_Th9MTLNAGkuZVwycKKT7HM1_b',
-            // },
+            recaptcha: {
+                v2SiteKey: process.env.V2_SITE_KEY,
+                v3SiteKey: process.env.V3_SITE_KEY,
+            },
+
+            EMAILJS_SERVICE_ID: process.env.EMAILJS_SERVICE_ID,
+            EMAILJS_TEMPLATE_ID: process.env.EMAILJS_TEMPLATE_ID,
+            EMAILJS_PUBLIC_KEY: process.env.EMAILJS_PUBLIC_KEY,
         },
     },
 })

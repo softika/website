@@ -1,14 +1,21 @@
 <script lang="ts" setup>
 import {rules} from "@/utils/rules"
 import {reactive} from "vue"
+import {useChallengeV3} from 'vue-recaptcha'
+import emailjs from '@emailjs/browser';
 
-const loading = ref(false)
+const response = ref()
+const checked = ref(false)
+const sendSuccess = ref(false)
+const sendError = ref(false)
+useRecaptchaProvider()
+const {execute} = useChallengeV3('submit')
 
-
-async function onSubmit() {
-  loading.value = true
-  console.info('trying re-captcha')
-  loading.value = false
+async function challenge() {
+  response.value = await execute()
+  if (response) {
+    checked.value = true
+  }
 }
 
 const message = reactive({
@@ -18,9 +25,23 @@ const message = reactive({
   text: '',
 })
 
+const config = useRuntimeConfig();
+const publicKey = config.public['EMAILJS_PUBLIC_KEY']
+const serviceId = config.public['EMAILJS_SERVICE_ID']
+const templateId = config.public['EMAILJS_TEMPLATE_ID']
+
 function sendMessage() {
-  console.info("Sending message to %s on %s", message.name, message.email)
-  console.info("Sending message text %s", message.text)
+  emailjs.send(
+      serviceId,
+      templateId,
+      message,
+      publicKey
+  ).then(res => {
+    sendSuccess.value = true
+    clearMessage()
+  }).catch(err => {
+    sendError.value = true
+  })
 }
 
 function clearMessage() {
@@ -28,7 +49,12 @@ function clearMessage() {
   message.email = ''
   message.subject = ''
   message.text = ''
-  loading.value = false
+  response.value = null
+  checked.value = false
+}
+
+function isSendReady() {
+  return response.value && message.name && message.email && message.subject && message.text
 }
 </script>
 
@@ -85,13 +111,16 @@ function clearMessage() {
         />
       </v-col>
 
-      <v-col align="center" cols="12">
-        <v-checkbox-btn v-model="loading" :loading="loading" label="Check if you are not a robot."
-                        @click.prevent="onSubmit"/>
+      <v-col cols="12">
+        <v-checkbox-btn v-model="checked" color="black" label="I'm not a robot!" @click="challenge"/>
       </v-col>
       <v-col cols="12" md="6" sm="12">
-        <v-btn :block="true" class="me-2 bg-secondary font-weight-bold" size="large" width="128"
-               @click="sendMessage">
+        <v-btn
+            :block="true"
+            :disabled="!isSendReady()"
+            class="me-2 bg-secondary font-weight-bold" size="large"
+            width="128"
+            @click="sendMessage">
           Send
         </v-btn>
       </v-col>
@@ -102,6 +131,21 @@ function clearMessage() {
         </v-btn>
       </v-col>
     </v-row>
+    <v-col cols="12">
+      <v-snackbar v-model="sendSuccess" :absolute="true" bottom color="success">
+        <span>Message sent successfully</span>
+        <v-icon dark>
+          mdi-checkbox-marked-circle
+        </v-icon>
+      </v-snackbar>
+      <v-snackbar v-model="sendError" :absolute="true" bottom color="error">
+        <span>Message sent failed</span>
+        <p>Please try later</p>
+        <v-icon dark>
+          alert-circle-outline
+        </v-icon>
+      </v-snackbar>
+    </v-col>
   </v-card>
   <v-row align="center" class="py-16 py-md-16 py-sm-16 py-lg-16 " justify="center">
     <v-col cols="12">
