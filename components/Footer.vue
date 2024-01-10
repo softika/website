@@ -22,7 +22,7 @@ import Logo from "~/components/Logo.vue"
       </div>
       <div class="my-16">
         <v-btn class="mx-4"
-               href="https://www.linkedin.com/company/deadpan/"
+               href="https://www.linkedin.com/company/softika"
                icon="mdi-linkedin"
                target="_blank"
                variant="text"/>
@@ -44,7 +44,7 @@ import Logo from "~/components/Logo.vue"
 
 
       <div class="text-center mt-10">
-        All rights are reserved &copy;
+        All rights reserved &copy;
         {{ new Date().getFullYear() }}, Softika Team
       </div>
     </v-container>

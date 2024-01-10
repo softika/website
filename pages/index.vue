@@ -58,7 +58,7 @@ import Tech from "~/components/Tech.vue";
     </v-col>
   </v-row>
 
-
+  <!--  Team  -->
   <v-row align="center" class="py-16 px-0" justify="center">
     <v-col cols="12">
       <div class='text-h2 text-center font-weight-bold pt-2'>

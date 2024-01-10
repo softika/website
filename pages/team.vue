@@ -30,13 +30,14 @@ const {mdAndUp} = useDisplay()
                   <h3 class="text-center text-lg-h3 text-h4 font-weight-bold mb-4">
                     Filip
                   </h3>
-                  <span class="text-h5 text-center text-grey-darken-1"><b>Full-Stack Developer</b></span>
+                  <span class="text-h5 text-center text-grey-darken-1 h1-txt"><b>Full-Stack Developer</b></span>
                   <br><br>
                   <div class="text-center text-grey-darken-1 text-h6 font-weight-regular">
                     With a rich tapestry of 15 years programming, Filip is a professional who is
-                    proficient in a myriad of languages, with a special affinity for GO and Java. His true joy lies in
+                    proficient in a myriad of programming languages, with a special affinity for GO and Java. His true
+                    joy lies in
                     the complete coding process, from conceptual design through to meticulous implementation.
-                    As a dedicated and passionate individual, He brings a wealth of
+                    As a dedicated and passionate individual, he brings a wealth of
                     expertise to any project, ensuring that every line of code reflects genuine love for the craft.
                   </div>
                 </v-col>
@@ -74,7 +75,8 @@ const {mdAndUp} = useDisplay()
                   <h3 class="text-center text-lg-h3 text-h4 font-weight-bold mb-4">
                     Nikola
                   </h3>
-                  <span class="text-h5 text-center text-grey-darken-1"><b>Full-Stack & Mobile Developer</b></span>
+                  <span
+                      class="text-h5 text-center text-grey-darken-1 h1-txt"><b>Full-Stack & Mobile Developer</b></span>
                   <br><br>
                   <div class="text-center text-grey-darken-1 text-h6 font-weight-regular">
                     Armed with 16 years of hands-on experience, Nikola is a

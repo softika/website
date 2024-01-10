@@ -5,14 +5,14 @@
         <v-col cols="12" md="6">
           <v-img
               alt="mobile apps"
-              class="elevation-5 rounded"
+              class="elevation-5 rounded anima"
               height="300"
               src="@/assets/imgs/mobile-t-bg.png"
           />
         </v-col>
 
         <v-col cols="12" md="6">
-          <h1 class="text-h5 mx-auto mb-4 font-weight-bold">
+          <h1 class="text-h5 mx-auto mb-4 font-weight-bold h1-txt">
             Mobile Apps
           </h1>
 
@@ -53,5 +53,9 @@ a {
   background-color: #e04050;
   opacity: 0.8;
   transition: 2s;
+}
+
+.anima:hover {
+  transform: rotate3d(.3, .866, 0, 15deg) rotate(-15deg);
 }
 </style>

@@ -64,8 +64,13 @@ function isSendReady() {
       <MyBanner
           bg-variation="var2"
           text="We'd love to work with you. Send us a message."
-          title="Upcoming project?"
+          title="Do you have an upcoming project?"
       />
+    </v-col>
+  </v-row>
+  <v-row>
+    <v-col cols="12" lg="12" md="12" sm="4">
+      <Letter/>
     </v-col>
   </v-row>
   <v-card class=" ma-4" variant="text">
@@ -160,4 +165,36 @@ function isSendReady() {
 .v-card {
   z-index: 2;
 }
+
+
+.v-checkbox-btn {
+  animation: wiggle 2s linear infinite;
+  transform-origin: 10% 5em;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
 </style>

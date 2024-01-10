@@ -7,7 +7,7 @@ const drawer = ref(false)
 </script>
 
 <template>
-  <v-app-bar :flat="true" app elevation="0" height="70">
+  <v-app-bar :flat="true" app color="background" elevation="0" height="70">
     <template #prepend>
       <Logo/>
     </template>
@@ -23,12 +23,13 @@ const drawer = ref(false)
   </v-app-bar>
   <v-navigation-drawer
       v-model="drawer"
+      :elevation="0"
       :temporary="true"
       app
       color="background"
       location="top"
   >
-    <v-list :nav="true">
+    <v-list :nav="true" color="background">
       <v-list-item
           :nav="true"
           active-class="text-secondary"

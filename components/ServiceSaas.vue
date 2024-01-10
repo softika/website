@@ -3,7 +3,7 @@
     <v-container>
       <v-row align="center" justify="space-between">
         <v-col cols="12" md="6">
-          <h1 class="text-h5 mx-auto mb-4 font-weight-bold">
+          <h1 class="text-h5 mx-auto mb-4 font-weight-bold h1-txt">
             SaaS
           </h1>
 
