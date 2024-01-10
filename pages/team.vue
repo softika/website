@@ -30,8 +30,9 @@ const {mdAndUp} = useDisplay()
                   <h3 class="text-center text-lg-h3 text-h4 font-weight-bold mb-4">
                     Filip
                   </h3>
-                  <span class="text-h6 text-center text-grey-darken-1"><b>Full-Stack Developer</b></span>
-                  <div class="text-center text-medium-emphasis text-body-1">
+                  <span class="text-h5 text-center text-grey-darken-1"><b>Full-Stack Developer</b></span>
+                  <br><br>
+                  <div class="text-center text-grey-darken-1 text-h6 font-weight-regular">
                     With a rich tapestry of 15 years programming, Filip is a professional who is
                     proficient in a myriad of languages, with a special affinity for GO and Java. His true joy lies in
                     the complete coding process, from conceptual design through to meticulous implementation.
@@ -73,14 +74,14 @@ const {mdAndUp} = useDisplay()
                   <h3 class="text-center text-lg-h3 text-h4 font-weight-bold mb-4">
                     Nikola
                   </h3>
-                  <span class="text-h6 text-center text-grey-darken-1"><b>Full-Stack & Mobile Developer</b></span><br>
-                  <div class="text-center text-medium-emphasis text-body-1">
-                    Driven by a passion for innovation and armed with 16 years of hands-on experience, Nikola is a
+                  <span class="text-h5 text-center text-grey-darken-1"><b>Full-Stack & Mobile Developer</b></span>
+                  <br><br>
+                  <div class="text-center text-grey-darken-1 text-h6 font-weight-regular">
+                    Armed with 16 years of hands-on experience, Nikola is a
                     seasoned Full-stack and Mobile Engineer. Throughout his career, he has been at the forefront of
                     technological advancements, contributing to the development and success of diverse projects. His
-                    expertise encompasses the entire software development lifecycle, from concept to deployment With a
-                    keen eye for detail and a commitment to staying ahead of industry trends, he is dedicated to
-                    deliver cutting-edge solutions that exceed expectations.
+                    expertise encompasses the entire software development lifecycle, from concept to deployment. With a
+                    keen eye for detail, he is dedicated to deliver cutting-edge solutions that exceed expectations.
                   </div>
                 </v-col>
               </v-row>

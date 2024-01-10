@@ -2,6 +2,15 @@
 import {rules} from "@/utils/rules"
 import {reactive} from "vue"
 
+const loading = ref(false)
+
+
+async function onSubmit() {
+  loading.value = true
+  console.info('trying re-captcha')
+  loading.value = false
+}
+
 const message = reactive({
   name: '',
   email: '',
@@ -19,6 +28,7 @@ function clearMessage() {
   message.email = ''
   message.subject = ''
   message.text = ''
+  loading.value = false
 }
 </script>
 
@@ -75,6 +85,10 @@ function clearMessage() {
         />
       </v-col>
 
+      <v-col align="center" cols="12">
+        <v-checkbox-btn v-model="loading" :loading="loading" label="Check if you are not a robot."
+                        @click.prevent="onSubmit"/>
+      </v-col>
       <v-col cols="12" md="6" sm="12">
         <v-btn :block="true" class="me-2 bg-secondary font-weight-bold" size="large" width="128"
                @click="sendMessage">

@@ -90,6 +90,7 @@ defineProps({
   bottom: -2rem;
   height: 12rem;
   transform: skewY(-5deg);
+  opacity: .8;
 }
 
 #banner-background2 {
@@ -97,7 +98,7 @@ defineProps({
   background: #40e0d0;
   bottom: -6rem;
   height: 5rem;
-  opacity: .8;
+  opacity: .5;
   transform: skewY(-5deg);
 }
 
@@ -107,6 +108,7 @@ defineProps({
   bottom: -2rem;
   height: 12rem;
   transform: skewY(5deg);
+  opacity: .8;
 }
 
 #banner-background2-var2 {
@@ -114,7 +116,7 @@ defineProps({
   background: #40e0d0;
   bottom: -6rem;
   height: 5rem;
-  opacity: .8;
+  opacity: .5;
   transform: skewY(5deg);
 }
 
@@ -124,6 +126,7 @@ defineProps({
   bottom: -2rem;
   height: 12rem;
   transform: skewY(-5deg);
+  opacity: .8;
 }
 
 #banner-background2-var3 {
@@ -131,7 +134,7 @@ defineProps({
   background: #e04050;
   bottom: -6rem;
   height: 5rem;
-  opacity: .8;
+  opacity: .5;
   transform: skewY(-5deg);
 }
 
@@ -141,6 +144,7 @@ defineProps({
   bottom: -2rem;
   height: 12rem;
   transform: skewY(5deg);
+  opacity: .8;
 }
 
 #banner-background2-var4 {
@@ -148,7 +152,7 @@ defineProps({
   background: #e04050;
   bottom: -6rem;
   height: 5rem;
-  opacity: .8;
+  opacity: .5;
   transform: skewY(5deg);
 }
 

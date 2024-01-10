@@ -16,22 +16,21 @@
             Mobile Apps
           </h1>
 
-          <div class="text-body-1 font-weight-bold">
+          <div class="text-h5 font-weight-regular">
             We embark on a journey to build innovative, cross platform and user-friendly mobile solutions.
             Whether you're envisioning a cutting-edge app, an immersive mobile game,
             or a business-critical mobile platform, our collaborative
-            approach ensures that your project is not only meticulously developed but also perfectly aligned with your
-            unique goals.
+            approach ensures that your project is perfectly aligned with your goals.
+            <a class="link" href="/contact">Tell us more!</a>
           </div>
-
-          <a class="link" href="/contact">Tell us more!</a>
         </v-col>
       </v-row>
     </v-container>
   </v-card>
 </template>
 
-<script lang="ts" setup/>
+<script lang="ts" setup>
+</script>
 
 <style lang="css" scoped>
 .v-card {

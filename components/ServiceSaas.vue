@@ -7,15 +7,12 @@
             SaaS
           </h1>
 
-          <div class="text-body-1 font-weight-bold">
-            We specialize in crafting bespoke SaaS solutions tailored to elevate your business operations. With a
-            passion for innovation and a commitment to excellence, we bring a unique blend of technical expertise and
-            creative problem-solving to every project. Our collaborative approach ensures that each SaaS solution we
-            build not only meets but exceeds your expectations, providing a seamless integration of cutting-edge
-            technology, user-friendly interfaces, and scalability to drive your business towards sustained success.
+          <div class="text-h5 font-weight-regular">
+            We create custom SaaS solutions to enhance your business operations, combining technical expertise and
+            creative problem-solving. Our collaborative approach ensures seamless integration of innovative technology,
+            user-friendly interfaces, and scalability for your sustained success.
+            <a class="link" href="/contact">Partner with us!</a>
           </div>
-
-          <a class="link" href="/contact">Partner with us!</a>
         </v-col>
 
         <v-col cols="12" md="6">
