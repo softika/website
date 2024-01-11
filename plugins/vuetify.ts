@@ -5,8 +5,8 @@ import * as directives from 'vuetify/directives'
 
 const colors = {
     background: '#FCFBF4',
-    primary: '#e04050', //#360a3b
-    secondary: '#40e0d0',//#1e90ff
+    primary: '#e04050',
+    secondary: '#40e0d0',
 }
 
 const dark: ThemeDefinition = {

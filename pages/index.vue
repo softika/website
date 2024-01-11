@@ -68,6 +68,7 @@ import Tech from "~/components/Tech.vue";
     <v-col cols="12">
       <MyBanner
           bg-variation="var4"
+          button-icon="mdi-account-multiple"
           button-text="Meet the team"
           route-path="/team"
           title="Let us tell you who we are."

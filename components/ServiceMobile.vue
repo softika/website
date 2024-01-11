@@ -5,20 +5,20 @@
         <v-col cols="12" md="6">
           <v-img
               alt="mobile apps"
-              class="elevation-5 rounded anima"
+              class="elevation-5 rounded"
               height="300"
               src="@/assets/imgs/mobile-t-bg.png"
           />
         </v-col>
 
         <v-col cols="12" md="6">
-          <h1 class="text-h5 mx-auto mb-4 font-weight-bold h1-txt">
+          <h1 class="text-h5 mx-auto mb-4 font-weight-bold pop-outin">
             Mobile Apps
           </h1>
 
           <div class="text-h5 font-weight-regular">
             We embark on a journey to build innovative, cross platform and user-friendly mobile solutions.
-            Whether you're envisioning a cutting-edge app, an immersive mobile game,
+            Whether you're envisioning a cutting-edge app, a mobile app for your blog,
             or a business-critical mobile platform, our collaborative
             approach ensures that your project is perfectly aligned with your goals.
             <a class="link" href="/contact">Tell us more!</a>

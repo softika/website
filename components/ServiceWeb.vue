@@ -5,14 +5,14 @@
         <v-col cols="12" md="6">
           <v-img
               alt="web design"
-              class="elevation-5 rounded anima"
+              class="elevation-5 rounded"
               height="300"
               src="@/assets/imgs/web_design-t-bg.png"
           />
         </v-col>
 
         <v-col cols="12" md="6">
-          <h1 class="text-h5 mx-auto mb-4 font-weight-bold h1-txt">
+          <h1 class="text-h5 mx-auto mb-4 font-weight-bold pop-outin">
             Web Development
           </h1>
 

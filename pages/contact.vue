@@ -59,7 +59,7 @@ function isSendReady() {
 </script>
 
 <template>
-  <v-row align="center" class="py-16 py-md-16 py-sm-16 py-lg-16 " justify="center">
+  <v-row align="center" class="py-16 py-md-16 py-sm-16 py-lg-16" justify="center">
     <v-col cols="12">
       <MyBanner
           bg-variation="var2"
@@ -68,12 +68,8 @@ function isSendReady() {
       />
     </v-col>
   </v-row>
-  <v-row>
-    <v-col cols="12" lg="12" md="12" sm="4">
-      <Letter/>
-    </v-col>
-  </v-row>
-  <v-card class=" ma-4" variant="text">
+
+  <v-card class="ma-4" variant="text">
     <v-row class="px-md-16 px-lg-16 px-sm-0" justify="center">
       <v-col cols="12" md="6" sm="12">
         <v-text-field
