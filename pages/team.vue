@@ -19,9 +19,7 @@ const {mdAndUp} = useDisplay()
       <v-card border="0" color="transparent" elevation="0">
         <v-row class="text-center" justify="center" no-gutters>
           <v-col cols="12">
-            <v-avatar :size="mdAndUp ? 300 : 150" elevation="12">
-              <v-img alt="Filip Miskovic" src="@/assets/imgs/filip-t-bg.png"/>
-            </v-avatar>
+            <v-avatar :size="mdAndUp ? 300 : 150" image="@/assets/imgs/filip.jpeg"/>
           </v-col>
           <v-col cols="12">
             <v-card-text class="d-flex flex-column justify-center h-100">
@@ -64,9 +62,7 @@ const {mdAndUp} = useDisplay()
       <v-card border="0" color="transparent" elevation="0">
         <v-row class="text-center" justify="center" no-gutters>
           <v-col cols="12">
-            <v-avatar :size="mdAndUp ? 300 : 150" elevation="12">
-              <v-img alt="Nikola Petrovic" src="@/assets/imgs/nikola-t-bg.png"/>
-            </v-avatar>
+            <v-avatar :size="mdAndUp ? 300 : 150" image="@/assets/imgs/nikola.jpeg"/>
           </v-col>
           <v-col cols="12">
             <v-card-text class="d-flex flex-column justify-center h-100">

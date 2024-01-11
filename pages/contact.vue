@@ -132,21 +132,23 @@ function isSendReady() {
         </v-btn>
       </v-col>
     </v-row>
-    <v-col cols="12">
-      <v-snackbar v-model="sendSuccess" :absolute="true" bottom color="success">
-        <span>Message sent successfully</span>
-        <v-icon dark>
-          mdi-checkbox-marked-circle
-        </v-icon>
-      </v-snackbar>
-      <v-snackbar v-model="sendError" :absolute="true" bottom color="error">
-        <span>Message sent failed</span>
-        <p>Please try later</p>
-        <v-icon dark>
-          alert-circle-outline
-        </v-icon>
-      </v-snackbar>
-    </v-col>
+    <v-row v-if="sendSuccess || sendError" class="px-md-16 px-lg-16 px-sm-0" justify="center">
+      <v-col cols="12">
+        <v-snackbar v-model="sendSuccess" color="success">
+          <span>Message sent successfully</span>
+          <v-icon dark>
+            mdi-checkbox-marked-circle
+          </v-icon>
+        </v-snackbar>
+        <v-snackbar v-model="sendError" color="error">
+          <span>Message sent failed</span>
+          <p>Please try later</p>
+          <v-icon dark>
+            alert-circle-outline
+          </v-icon>
+        </v-snackbar>
+      </v-col>
+    </v-row>
   </v-card>
   <v-row align="center" class="py-16 py-md-16 py-sm-16 py-lg-16 " justify="center">
     <v-col cols="12">
