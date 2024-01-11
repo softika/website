@@ -15,40 +15,40 @@ import Tech from "~/components/Tech.vue";
   </v-row>
 
   <!--  Services  -->
-  <v-row align="center" class="py-16 px-0 bg-background" justify="center">
+  <v-row align="center" justify="center">
     <v-col cols="12">
       <div class='text-h2 text-center font-weight-bold'>
         Services
       </div>
     </v-col>
   </v-row>
-  <v-row align="center" class="bg-background" justify="center">
+  <v-row align="center" justify="center">
     <v-col cols="12">
       <ServiceWeb/>
       <MyBanner bg-variation="var3"/>
     </v-col>
   </v-row>
-  <v-row align="center" class="bg-background" justify="center">
+  <v-row align="center" justify="center">
     <v-col cols="12">
       <ServiceApi/>
     </v-col>
   </v-row>
-  <v-row align="center" class="bg-background" justify="center">
+  <v-row align="center" justify="center">
     <v-col cols="12">
       <ServiceMobile/>
       <MyBanner bg-variation="var4"/>
     </v-col>
   </v-row>
-  <v-row align="center" class="bg-background" justify="center">
+  <v-row align="center" justify="center">
     <v-col cols="12">
       <ServiceSaas/>
     </v-col>
   </v-row>
 
   <!--  Expertise  -->
-  <v-row align="center" class="py-16 px-0 bg-background" justify="center">
+  <v-row align="center" class="py-16" justify="center">
     <v-col cols="12">
-      <div class='text-h2 text-center font-weight-bold py-16'>
+      <div class='text-h2 text-center font-weight-bold'>
         Expertise
       </div>
     </v-col>
@@ -59,17 +59,17 @@ import Tech from "~/components/Tech.vue";
   </v-row>
 
   <!--  Team  -->
-  <v-row align="center" class="py-16 px-0" justify="center">
+  <v-row align="center" justify="center">
     <v-col cols="12">
-      <div class='text-h2 text-center font-weight-bold pt-2'>
+      <div class='text-h2 text-center font-weight-bold'>
         People
       </div>
     </v-col>
     <v-col cols="12">
       <MyBanner
           bg-variation="var4"
-          button-icon="mdi-account-multiple"
-          button-text="Meet the team"
+          button-icon=" mdi-magnify"
+          button-text="find out"
           route-path="/team"
           title="Let us tell you who we are."
       />

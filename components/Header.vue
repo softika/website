@@ -28,6 +28,7 @@ const drawer = ref(false)
       app
       color="background"
       location="top"
+      width="162"
   >
     <v-list :nav="true" color="background">
       <v-list-item

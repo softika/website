@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import {useDisplay} from "vuetify"
+
+const {mdAndUp} = useDisplay()
 
 defineProps({
   title: {
@@ -60,9 +63,8 @@ defineProps({
           <div class="text-center">
             <v-btn
                 :prepend-icon="buttonIcon"
+                :size="mdAndUp ? 'large' : 'small'"
                 color="black"
-                size="large"
-                width="200"
                 @click.stop="$router.push(routePath)"
             >
               {{ buttonText }}
