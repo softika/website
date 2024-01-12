@@ -8,7 +8,7 @@
             Web Development
           </h1>
 
-          <div class="text-h5 text-center font-weight-regular">
+          <div class="text-h5 text-left font-weight-regular">
             Our passion lies in user satisfaction, and it's what fuels our excitement for creating websites that
             seamlessly merge aesthetic appeal with functionality. Whether it's developing portfolios and informative
             pages or delving into full-scale web applications and immersive experiences, we love the diversity of
@@ -41,7 +41,7 @@
             Web Development
           </h1>
 
-          <div class="text-h5 text-center font-weight-regular">
+          <div class="text-h5 text-left font-weight-regular">
             Our passion lies in user satisfaction, and it's what fuels our excitement for creating websites that
             seamlessly merge aesthetic appeal with functionality. Whether it's developing portfolios and informative
             pages or delving into full-scale web applications and immersive experiences, we love the diversity of

@@ -62,7 +62,7 @@ function isSendReady() {
   <v-row align="center" class="py-16 py-md-16 py-sm-16 py-lg-16" justify="center">
     <v-col cols="12">
       <MyBanner
-          bg-variation="var2"
+          bg-variation="var4"
           text="We'd love to work with you. Send us a message."
           title="Do you have an upcoming project?"
       />
@@ -119,7 +119,7 @@ function isSendReady() {
         <v-btn
             :block="true"
             :disabled="!isSendReady()"
-            class="me-2 bg-secondary font-weight-bold" size="large"
+            class="me-2 font-weight-bold" size="large" variant="outlined"
             width="128"
             @click="sendMessage">
           Send

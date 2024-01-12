@@ -17,7 +17,7 @@
     bottom: 0;
     left: 0;
     inset: 0 0 0 0;
-    background: #40e0d0;
+    background: #63AEBB;
     z-index: -1;
     transition: transform .3s ease;
 }
@@ -29,9 +29,10 @@
 
 @keyframes highlight-text {
     0%, 100% {
-        background-color: #40e0d0;
+        background-color: #63AEBB;
     }
     50% {
         background-color: transparent;
+        opacity: 0.5;
     }
 }

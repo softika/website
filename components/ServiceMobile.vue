@@ -8,7 +8,7 @@
             Mobile Apps
           </h1>
 
-          <div class="text-h5 text-center font-weight-regular">
+          <div class="text-h5 text-left font-weight-regular">
             We embark on a journey to build innovative, cross platform and user-friendly mobile solutions.
             Whether you're envisioning a cutting-edge app, a mobile app for your blog,
             or a business-critical mobile platform, our collaborative
@@ -41,7 +41,7 @@
             Mobile Apps
           </h1>
 
-          <div class="text-h5 text-center font-weight-regular">
+          <div class="text-h5 text-left font-weight-regular">
             We embark on a journey to build innovative, cross platform and user-friendly mobile solutions.
             Whether you're envisioning a cutting-edge app, a mobile app for your blog,
             or a business-critical mobile platform, our collaborative

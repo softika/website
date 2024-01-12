@@ -28,9 +28,9 @@ const {mdAndUp} = useDisplay()
                   <h3 class="text-center text-lg-h3 text-h4 font-weight-bold mb-4">
                     Filip
                   </h3>
-                  <span class="text-h5 text-center text-grey-darken-1 h1-txt"><b>Full-Stack Developer</b></span>
+                  <span class="text-h5 text-center text-grey-darken-1"><b>Full-Stack Developer</b></span>
                   <br><br>
-                  <div class="text-center text-grey-darken-1 text-h6 font-weight-regular">
+                  <div class="text-justify text-grey-darken-1 text-h6 font-weight-regular">
                     With a rich tapestry of 15 years programming, Filip is a professional who is
                     proficient in a myriad of programming languages, with a special affinity for GO and Java. His true
                     joy lies in
@@ -72,9 +72,9 @@ const {mdAndUp} = useDisplay()
                     Nikola
                   </h3>
                   <span
-                      class="text-h5 text-center text-grey-darken-1 h1-txt"><b>Full-Stack & Mobile Developer</b></span>
+                      class="text-h5 text-center text-grey-darken-1"><b>Full-Stack & Mobile Developer</b></span>
                   <br><br>
-                  <div class="text-center text-grey-darken-1 text-h6 font-weight-regular">
+                  <div class="text-justify text-grey-darken-1 text-h6 font-weight-regular">
                     Armed with 16 years of hands-on experience, Nikola is a
                     seasoned Full-stack and Mobile Engineer. Throughout his career, he has been at the forefront of
                     technological advancements, contributing to the development and success of diverse projects. His
@@ -106,7 +106,7 @@ const {mdAndUp} = useDisplay()
   <v-row class="py-16" justify="center">
     <v-col cols="12">
       <MyBanner
-          bg-variation="var2"
+          bg-variation="var4"
           button-icon="mdi-chat-outline"
           button-text=" Let's talk"
           route-path="/contact"

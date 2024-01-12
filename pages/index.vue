@@ -7,9 +7,9 @@ import Tech from "~/components/Tech.vue";
   <v-row align="center" class="py-16" justify="center">
     <v-col class="text-center" cols="12">
       <MyBanner
-          bg-variation="var4"
-          text="we make building software look easy."
-          title="Hello 👋, we are Softika,"
+          bg-variation="var2"
+          text="we provide full-stack development services."
+          title="Hello 👋, we're Softika,"
       />
     </v-col>
   </v-row>
@@ -17,8 +17,8 @@ import Tech from "~/components/Tech.vue";
   <!--  Services  -->
   <v-row align="center" justify="center">
     <v-col cols="12">
-      <div class='text-h2 text-center font-weight-bold'>
-        Services
+      <div class='text-h4 text-center font-weight-bold'>
+        What we do is...
       </div>
     </v-col>
   </v-row>
@@ -36,7 +36,7 @@ import Tech from "~/components/Tech.vue";
   <v-row align="center" justify="center">
     <v-col cols="12">
       <ServiceMobile/>
-      <MyBanner bg-variation="var4"/>
+      <MyBanner bg-variation="var2"/>
     </v-col>
   </v-row>
   <v-row align="center" justify="center">
@@ -48,8 +48,8 @@ import Tech from "~/components/Tech.vue";
   <!--  Expertise  -->
   <v-row align="center" class="py-16" justify="center">
     <v-col cols="12">
-      <div class='text-h2 text-center font-weight-bold'>
-        Expertise
+      <div class='text-h4 text-center font-weight-bold'>
+        Our tech stack
       </div>
     </v-col>
     <v-col cols="12">
@@ -61,13 +61,13 @@ import Tech from "~/components/Tech.vue";
   <!--  Team  -->
   <v-row align="center" justify="center">
     <v-col cols="12">
-      <div class='text-h2 text-center font-weight-bold'>
-        People
+      <div class='text-h4 text-center font-weight-bold'>
+        People behind Softika
       </div>
     </v-col>
     <v-col cols="12">
       <MyBanner
-          bg-variation="var4"
+          bg-variation="var2"
           button-icon=" mdi-magnify"
           button-text="find out"
           route-path="/team"

@@ -88,73 +88,73 @@ defineProps({
 
 #banner-background {
   display: block;
-  background: #e04050;
+  background: #6382BB;
   bottom: -2rem;
   height: 12rem;
   transform: skewY(-5deg);
-  opacity: .8;
+  opacity: .2;
 }
 
 #banner-background2 {
   display: block;
-  background: #40e0d0;
+  background: #63AEBB;
   bottom: -6rem;
   height: 5rem;
-  opacity: .5;
+  opacity: .2;
   transform: skewY(-5deg);
 }
 
 #banner-background-var2 {
   display: block;
-  background: #e04050;
+  background: #6382BB;
   bottom: -2rem;
   height: 12rem;
   transform: skewY(5deg);
-  opacity: .8;
+  opacity: .2;
 }
 
 #banner-background2-var2 {
   display: block;
-  background: #40e0d0;
+  background: #63AEBB;
   bottom: -6rem;
   height: 5rem;
-  opacity: .5;
+  opacity: .2;
   transform: skewY(5deg);
 }
 
 #banner-background-var3 {
   display: block;
-  background: #40e0d0;
+  background: #63AEBB;
   bottom: -2rem;
   height: 12rem;
   transform: skewY(-5deg);
-  opacity: .8;
+  opacity: .2;
 }
 
 #banner-background2-var3 {
   display: block;
-  background: #e04050;
+  background: #6382BB;
   bottom: -6rem;
   height: 5rem;
-  opacity: .5;
+  opacity: .2;
   transform: skewY(-5deg);
 }
 
 #banner-background-var4 {
   display: block;
-  background: #40e0d0;
+  background: #63AEBB;
   bottom: -2rem;
   height: 12rem;
   transform: skewY(5deg);
-  opacity: .8;
+  opacity: .2;
 }
 
 #banner-background2-var4 {
   display: block;
-  background: #e04050;
+  background: #6382BB;
   bottom: -6rem;
   height: 5rem;
-  opacity: .5;
+  opacity: .2;
   transform: skewY(5deg);
 }
 

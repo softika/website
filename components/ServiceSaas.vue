@@ -7,7 +7,7 @@
             SaaS
           </h1>
 
-          <div class="text-h5 text-center font-weight-regular">
+          <div class="text-h5 text-md-right text-sm-left font-weight-regular">
             We create custom SaaS solutions to enhance your business operations, combining technical expertise and
             creative problem-solving. Our collaborative approach ensures seamless integration of innovative technology,
             user-friendly interfaces, and scalability for your sustained success.

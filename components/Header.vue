@@ -18,7 +18,12 @@ const drawer = ref(false)
         <v-btn class="font-weight-bold" @click.stop="$router.push('/team')">Team</v-btn>
         <v-btn class="font-weight-bold" @click.stop="$router.push('/contact')">Contact</v-btn>
       </div>
-      <v-app-bar-nav-icon class="hidden-lg-and-up" elevation="0" @click.stop="drawer = !drawer"/>
+      <v-app-bar-nav-icon
+          border="0"
+          class="hidden-lg-and-up"
+          elevation="0"
+          size="large"
+          @click.stop="drawer = !drawer"/>
     </template>
   </v-app-bar>
   <v-navigation-drawer
@@ -28,6 +33,7 @@ const drawer = ref(false)
       app
       color="background"
       location="top"
+
       width="162"
   >
     <v-list :nav="true" color="background">

@@ -10,10 +10,10 @@
 <style scoped>
 .my-logo {
   overflow: visible;
-  margin-left: 0.5rem !important; /* Remove left margin */
-  margin-right: 0.5rem !important; /* Remove right margin */
-  margin-top: 0.0rem !important;
-  max-height: 8rem !important;
+  margin-left: 0.0rem !important; /* Remove left margin */
+  margin-right: 0.0rem !important; /* Remove right margin */
+  margin-top: 0.3rem !important;
+  max-height: 13rem !important;
   width: auto;
 }
 </style>
