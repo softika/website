@@ -34,6 +34,7 @@ import Logo from "~/components/Logo.vue"
         <v-btn class="mx-4"
                href="https://twitter.com/SoftikaDev"
                icon="mdi-twitter"
+               target="_blank"
                variant="text"/>
         <v-btn class="mx-4"
                href="https://www.facebook.com/profile.php?id=61555499463949"
