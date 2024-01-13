@@ -25,7 +25,6 @@ import Tech from "~/components/Tech.vue";
   <v-row align="center" justify="center">
     <v-col cols="12">
       <ServiceWeb/>
-      <MyBanner bg-variation="var3"/>
     </v-col>
   </v-row>
   <v-row align="center" justify="center">
@@ -36,7 +35,6 @@ import Tech from "~/components/Tech.vue";
   <v-row align="center" justify="center">
     <v-col cols="12">
       <ServiceMobile/>
-      <MyBanner bg-variation="var2"/>
     </v-col>
   </v-row>
   <v-row align="center" justify="center">
@@ -48,13 +46,13 @@ import Tech from "~/components/Tech.vue";
   <!--  Expertise  -->
   <v-row align="center" class="py-16" justify="center">
     <v-col cols="12">
+      <MyBanner bg-variation="var3"/>
       <div class='text-h4 text-center font-weight-bold'>
         Our tech stack
       </div>
     </v-col>
     <v-col cols="12">
       <Tech/>
-      <MyBanner bg-variation="var3"/>
     </v-col>
   </v-row>
 
