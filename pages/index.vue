@@ -8,8 +8,8 @@ import Tech from "~/components/Tech.vue";
     <v-col class="text-center" cols="12">
       <MyBanner
           bg-variation="var2"
-          text="we provide full-stack development services."
-          title="Hello 👋, we're Softika,"
+          text="We provide full-stack development services."
+          title="Hello 👋, we're Softika."
       />
     </v-col>
   </v-row>
@@ -22,7 +22,7 @@ import Tech from "~/components/Tech.vue";
       </div>
     </v-col>
   </v-row>
-  <v-row align="center" justify="center">
+  <v-row align="center" class="py-10" justify="center">
     <v-col cols="12">
       <ServiceWeb/>
     </v-col>
@@ -47,7 +47,7 @@ import Tech from "~/components/Tech.vue";
   <v-row align="center" class="py-16" justify="center">
     <v-col cols="12">
       <MyBanner bg-variation="var3"/>
-      <div class='text-h4 text-center font-weight-bold'>
+      <div class='text-h4 text-center font-weight-bold py-10'>
         Our tech stack
       </div>
     </v-col>
@@ -59,7 +59,7 @@ import Tech from "~/components/Tech.vue";
   <!--  Team  -->
   <v-row align="center" justify="center">
     <v-col cols="12">
-      <div class='text-h4 text-center font-weight-bold'>
+      <div class='text-h4 text-center font-weight-bold py-10'>
         People behind Softika
       </div>
     </v-col>

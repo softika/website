@@ -7,7 +7,7 @@
             API Backend & Frontend
           </h1>
 
-          <div class="text-h5 text-sm-left text-md-right font-weight-regular">
+          <div class="text-h5 text-left font-weight-regular">
             We specialize in full-stack development, seamlessly integrating backend, frontend, and API solutions for
             your digital goals. Our expertise lies in crafting robust backend architectures complemented by visually
             stunning frontends. Focused on efficient API development, we ensure smooth communication between system
