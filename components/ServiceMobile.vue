@@ -4,8 +4,8 @@
       <!-- on mobile devices -->
       <v-row v-if="smAndDown" align="center" justify="center">
         <v-col cols="12" sm="12">
-          <h1 class="text-h5 text-center mx-auto mb-4 font-weight-bold h1-txt">
-            Mobile Apps
+          <h1 class="text-h5 text-center mx-auto mb-4 font-weight-bold bg-primary">
+            Mobile Apps 📱
           </h1>
 
           <div class="text-h5 text-left font-weight-regular">
@@ -37,8 +37,8 @@
         </v-col>
 
         <v-col cols="12" md="6">
-          <h1 class="text-h5 text-center mx-auto mb-4 font-weight-bold h1-txt">
-            Mobile Apps
+          <h1 class="text-h5 text-center mx-auto mb-4 font-weight-bold bg-primary">
+            Mobile Apps 📱
           </h1>
 
           <div class="text-h5 text-left font-weight-regular">

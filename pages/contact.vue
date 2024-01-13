@@ -113,7 +113,13 @@ function isSendReady() {
       </v-col>
 
       <v-col cols="12">
-        <v-checkbox-btn v-model="checked" color="black" label="I'm not a robot!" @click="challenge"/>
+        <v-checkbox-btn
+            v-model="checked"
+            class="wiggle-wiggle"
+            color="black"
+            label="I'm not a robot!"
+            @click="challenge"
+        />
       </v-col>
       <v-col cols="12" md="6" sm="12">
         <v-btn
@@ -163,36 +169,4 @@ function isSendReady() {
 .v-card {
   z-index: 2;
 }
-
-
-.v-checkbox-btn {
-  animation: wiggle 2s linear infinite;
-  transform-origin: 10% 5em;
-}
-
-/* Keyframes */
-@keyframes wiggle {
-  0%, 7% {
-    transform: rotateZ(0);
-  }
-  15% {
-    transform: rotateZ(-15deg);
-  }
-  20% {
-    transform: rotateZ(10deg);
-  }
-  25% {
-    transform: rotateZ(-10deg);
-  }
-  30% {
-    transform: rotateZ(6deg);
-  }
-  35% {
-    transform: rotateZ(-4deg);
-  }
-  40%, 100% {
-    transform: rotateZ(0);
-  }
-}
-
 </style>
