@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser';
 
 const response = ref()
 const checked = ref(false)
+const policy = ref(false)
 const sendSuccess = ref(false)
 const sendError = ref(false)
 useRecaptchaProvider()
@@ -51,10 +52,11 @@ function clearMessage() {
   message.text = ''
   response.value = null
   checked.value = false
+  policy.value = false
 }
 
 function isSendReady() {
-  return response.value && message.name && message.email && message.subject && message.text
+  return policy.value && response.value && message.name && message.email && message.subject && message.text
 }
 </script>
 
@@ -112,7 +114,7 @@ function isSendReady() {
         />
       </v-col>
 
-      <v-col cols="12">
+      <v-col cols="12" md="6">
         <v-checkbox-btn
             v-model="checked"
             class="wiggle-wiggle"
@@ -121,11 +123,38 @@ function isSendReady() {
             @click="challenge"
         />
       </v-col>
+      <v-col cols="12" md="6">
+        <v-checkbox-btn
+            v-model="policy"
+            color="black"
+        >
+          <template v-slot:label>
+            <div>
+              I agree with
+              <v-tooltip location="bottom">
+                <template v-slot:activator="{ props }">
+                  <a
+                      href="/policy"
+                      target="_blank"
+                      v-bind="props"
+                      @click.stop
+                  >
+                    Privacy Policy
+                  </a>
+                </template>
+                Opens in new window
+              </v-tooltip>
+            </div>
+          </template>
+        </v-checkbox-btn>
+      </v-col>
       <v-col cols="12" md="6" sm="12">
         <v-btn
             :block="true"
             :disabled="!isSendReady()"
-            class="me-2 font-weight-bold" size="large" variant="outlined"
+            class="me-2 font-weight-bold"
+            color="secondary"
+            size="large"
             width="128"
             @click="sendMessage">
           Send
