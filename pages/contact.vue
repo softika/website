@@ -142,7 +142,7 @@ function isSendReady() {
                     Privacy Policy
                   </a>
                 </template>
-                Opens in new window
+                Opens in new tab
               </v-tooltip>
             </div>
           </template>
