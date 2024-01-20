@@ -22,22 +22,25 @@ import Tech from "~/components/Tech.vue";
       </div>
     </v-col>
   </v-row>
-  <v-row align="center" class="py-10" justify="center">
+  <v-row align="center" class="py-2" justify="center">
+    <v-col cols="12"/>
+  </v-row>
+  <v-row align="center" class="py-2" justify="center">
     <v-col cols="12">
       <ServiceWeb/>
     </v-col>
   </v-row>
-  <v-row align="center" justify="center">
+  <v-row align="center" class="py-2" justify="center">
     <v-col cols="12">
       <ServiceApi/>
     </v-col>
   </v-row>
-  <v-row align="center" justify="center">
+  <v-row align="center" class="py-2" justify="center">
     <v-col cols="12">
       <ServiceMobile/>
     </v-col>
   </v-row>
-  <v-row align="center" justify="center">
+  <v-row align="center" class="py-2" justify="center">
     <v-col cols="12">
       <ServiceSaas/>
     </v-col>
