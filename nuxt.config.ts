@@ -6,7 +6,7 @@ export default defineNuxtConfig({
         head: {
             charset: 'utf-8',
             viewport: 'width=device-width, initial-scale=1',
-            title: 'Softika Development',
+            title: 'Softika Software Development',
             meta: [
                 {
                     name: 'description',
@@ -38,7 +38,12 @@ export default defineNuxtConfig({
                 config.plugins.push(vuetify({autoImport: true}))
             })
         },
+        //SEO
         '@nuxtjs/robots',
+        '@nuxtjs/sitemap',
+        'nuxt-og-image',
+        'nuxt-schema-org',
+        'nuxt-link-checker',
     ],
     vite: {
         vue: {
@@ -58,5 +63,12 @@ export default defineNuxtConfig({
             EMAILJS_TEMPLATE_ID: process.env.EMAILJS_TEMPLATE_ID,
             EMAILJS_PUBLIC_KEY: process.env.EMAILJS_PUBLIC_KEY,
         },
+    },
+    site: {
+        url: 'https://www.softika.dev/',
+        trailingSlash: true,
+        defaultLocale: 'en',
+        name: 'Softika Software Development',
+        description: 'Discover unparalleled software solutions with Softika, your go-to partner for expert website design, UX, mobile app development, frontend and backend API services. Elevate your digital presence with our Cloud Native SaaS solutions, tailored to meet your unique business needs.',
     },
 })

@@ -1,3 +1,8 @@
+img {
+    /* This inherits all CSS values including `overflow` */
+    all: inherit;
+}
+
 /* HIGHLIGHT */
 .wiggle-wiggle {
     animation: wiggle 2s linear infinite;
