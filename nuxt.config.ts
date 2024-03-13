@@ -38,6 +38,7 @@ export default defineNuxtConfig({
                 config.plugins.push(vuetify({autoImport: true}))
             })
         },
+        '@nuxtjs/robots',
     ],
     vite: {
         vue: {
