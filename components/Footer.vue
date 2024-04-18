@@ -22,6 +22,9 @@ import Logo from "~/components/Logo.vue"
         <v-btn class="mx-2" rounded variant="text" @click.stop="$router.push('/policy')">
           Privacy Policy
         </v-btn>
+        <v-btn class="mx-2" rounded variant="text" @click.stop="$router.push('/imprint')">
+          Imprint
+        </v-btn>
       </div>
       <div class="my-16">
         <v-btn class="mx-4"
