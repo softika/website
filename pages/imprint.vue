@@ -23,6 +23,9 @@
       </a>
       </div>
       <div class='text-h6 font-bold text-center'>
+        FN:&nbsp;622205 h
+      </div>
+      <div class='text-h6 font-bold text-center'>
         UID-Nr:&nbsp;ATU80464819
       </div>
       <div class='text-h6 font-bold text-center'>
