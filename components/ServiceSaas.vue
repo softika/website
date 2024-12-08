@@ -17,7 +17,7 @@
         <v-col cols="12" md="6">
           <v-img
               :height="mdAndUp ? 300 : 150"
-              alt="saas solutions"
+              alt="saas development"
               class="rounded elevation-5"
               src="@/assets/imgs/saas-t-bg.png"
           />

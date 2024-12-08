@@ -17,7 +17,7 @@
         </v-col>
         <v-col cols="12" sm="12">
           <v-img
-              alt="web design"
+              alt="mobile development"
               class="elevation-5 rounded"
               height="150"
               src="@/assets/imgs/mobile-t-bg.png"
@@ -29,7 +29,7 @@
       <v-row v-if="mdAndUp" align="center" justify="center">
         <v-col cols="12" md="6">
           <v-img
-              alt="mobile apps"
+              alt="mobile development"
               class="elevation-5 rounded"
               height="300"
               src="@/assets/imgs/mobile-t-bg.png"

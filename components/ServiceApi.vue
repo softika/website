@@ -18,7 +18,7 @@
         <v-col cols="12" md="6">
           <v-img
               :height="mdAndUp ? 300 : 150"
-              alt="saas solutions"
+              alt="backend and frontend development"
               class="rounded elevation-5"
               src="@/assets/imgs/api-t-bg.png"
           />

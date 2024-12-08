@@ -6,15 +6,15 @@ export default defineNuxtConfig({
         head: {
             charset: 'utf-8',
             viewport: 'width=device-width, initial-scale=1',
-            title: 'Softika Software Development',
+            title: 'Softika Software Development | SaaS Development, Cloud, Frontend, Backend API Services, Kubernetes, Cloud Native Solutions, AWS, GCP, Hetzner, Linode | Software Development Consultant | Softika',
             meta: [
                 {
                     name: 'description',
-                    content: 'Discover unparalleled software solutions with Softika, your go-to partner for expert website design, UX, mobile app development, frontend and backend API services. Elevate your digital presence with our Cloud Native SaaS solutions, tailored to meet your unique business needs.'
+                    content: 'Softika Software Development | SaaS Development, Cloud, Frontend, Backend API Services, Kubernetes, Cloud Native Solutions, AWS, GCP, Hetzner, Linode | Software Development Consultant | Softika'
                 },
                 {
                     name: 'ogDescription',
-                    content: 'Discover unparalleled software solutions with Softika, your go-to partner for expert website design, UX, mobile app development, frontend and backend API services. Elevate your digital presence with our Cloud Native SaaS solutions, tailored to meet your unique business needs.'
+                    content: 'Softika Software Development | SaaS Development, Cloud, Frontend, Backend API Services, Kubernetes, Cloud Native Solutions, AWS, GCP, Hetzner, Linode | Software Development Consultant | Softika'
                 }
             ],
         },
@@ -69,6 +69,6 @@ export default defineNuxtConfig({
         trailingSlash: true,
         defaultLocale: 'en',
         name: 'Softika Software Development',
-        description: 'Discover unparalleled software solutions with Softika, your go-to partner for expert website design, UX, mobile app development, frontend and backend API services. Elevate your digital presence with our Cloud Native SaaS solutions, tailored to meet your unique business needs.',
+        description: 'Softika Software Development | SaaS Development, Cloud, Frontend, Backend API Services, Kubernetes, Cloud Native Solutions, AWS, GCP, Hetzner, Linode | Software Development Consultant | Softika',
     },
 })
