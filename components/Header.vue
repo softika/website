@@ -41,7 +41,7 @@ const drawer = ref(false)
           :nav="true"
           active-class="text-secondary"
           class="font-weight-black"
-          prepend-icon="mdi-home-outline"
+          prepend-icon="$mdi-home-outline"
           to="/"
       >
         Home
@@ -50,7 +50,7 @@ const drawer = ref(false)
           :nav="true"
           active-class="text-secondary"
           class="font-weight-bold"
-          prepend-icon="mdi-account-multiple-outline"
+          prepend-icon="$mdi-account-multiple-outline"
           to="/team"
       >
         Team
@@ -59,7 +59,7 @@ const drawer = ref(false)
           :nav="true"
           active-class="text-secondary"
           class="font-weight-bold"
-          prepend-icon="mdi-email-outline"
+          prepend-icon="$mdi-email-outline"
           to="/contact"
       >
         Contact

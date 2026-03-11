@@ -29,22 +29,22 @@ import Logo from "~/components/Logo.vue"
       <div class="my-16">
         <v-btn class="mx-4"
                href="https://www.linkedin.com/company/softika"
-               icon="mdi-linkedin"
+               icon="$mdi-linkedin"
                target="_blank"
                variant="text"/>
         <v-btn class="mx-4"
                href="https://www.instagram.com/softika.dev/"
-               icon="mdi-instagram"
+               icon="$mdi-instagram"
                target="_blank"
                variant="text"/>
         <v-btn class="mx-4"
                href="https://twitter.com/SoftikaDev"
-               icon="mdi-twitter"
+               icon="$mdi-twitter"
                target="_blank"
                variant="text"/>
         <v-btn class="mx-4"
                href="https://www.facebook.com/profile.php?id=61555499463949"
-               icon="mdi-facebook"
+               icon="$mdi-facebook"
                target="_blank"
                variant="text"/>
       </div>

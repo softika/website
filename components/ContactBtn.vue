@@ -8,7 +8,7 @@ defineProps({
   icon: {
     type: String,
     required: false,
-    default: 'mdi-email-fast-outline'
+    default: '$mdi-email-fast-outline'
   }
 })
 </script>

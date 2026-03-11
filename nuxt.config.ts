@@ -16,7 +16,6 @@ export default defineNuxtConfig({
     devtools: {enabled: true},
     css: [
         'vuetify/lib/styles/main.css',
-        '@mdi/font/css/materialdesignicons.min.css',
         '@/style/main.sass',
         '@/style/custom.css'
     ],
@@ -78,6 +77,7 @@ export default defineNuxtConfig({
         },
     },
     sitemap: {
+        zeroRuntime: true,
         xslColumns: [
             {label: 'URL', width: '65%'},
             {label: 'Last Modified', select: 'sitemap:lastmod', width: '25%'},

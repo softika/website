@@ -22,25 +22,25 @@ useHead({
 
 const services = [
   {
-    icon: 'mdi-robot-outline',
+    icon: '$mdi-robot-outline',
     title: 'AI Agents & Automation',
     description: 'We build autonomous AI agents that handle real workflows — not chatbot demos. From LLM orchestration and tool-calling pipelines to multi-agent systems that reason, act, and learn. If it can be automated with intelligence, we build it.',
     highlights: ['Multi-agent orchestration', 'LLM tool-calling pipelines', 'RAG & knowledge systems', 'Human-in-the-loop workflows'],
   },
   {
-    icon: 'mdi-shield-lock-outline',
+    icon: '$mdi-shield-lock-outline',
     title: 'Agent Security & Guardrails',
     description: 'AI agents open new attack surfaces — prompt injection, data exfiltration, privilege escalation, uncontrolled tool access. We build secure-by-design agent systems with proper sandboxing, input validation, output filtering, and audit trails.',
     highlights: ['Prompt injection defense', 'Tool permission boundaries', 'Output sanitization', 'Compliance & audit logging'],
   },
   {
-    icon: 'mdi-rocket-launch-outline',
+    icon: '$mdi-rocket-launch-outline',
     title: 'SaaS Product Engineering',
     description: 'We help founders and teams go from idea to paying customers. Multi-tenant architecture, subscription billing, onboarding, dashboards, and the invisible plumbing that makes SaaS products reliable at scale.',
     highlights: ['Multi-tenant architecture', 'Payment & billing integration', 'Analytics dashboards', 'Zero-downtime deployments'],
   },
   {
-    icon: 'mdi-infinity',
+    icon: '$mdi-infinity',
     title: 'Platform & DevOps',
     description: 'Infrastructure as code, CI/CD pipelines, Kubernetes, observability. We build internal developer platforms that let your team ship faster without breaking things. Cloud native from the ground up.',
     highlights: ['Kubernetes & containers', 'CI/CD automation', 'Infrastructure as code', 'Monitoring & alerting'],
@@ -48,10 +48,10 @@ const services = [
 ]
 
 const trustSignals = [
-  {icon: 'mdi-clock-fast', text: 'Senior engineers from day one'},
-  {icon: 'mdi-shield-check-outline', text: 'Security-first architecture'},
-  {icon: 'mdi-source-branch', text: 'Production-ready, tested code'},
-  {icon: 'mdi-handshake-outline', text: 'Transparent, async communication'},
+  {icon: '$mdi-clock-fast', text: 'Senior engineers from day one'},
+  {icon: '$mdi-shield-check-outline', text: 'Security-first architecture'},
+  {icon: '$mdi-source-branch', text: 'Production-ready, tested code'},
+  {icon: '$mdi-handshake-outline', text: 'Transparent, async communication'},
 ]
 </script>
 
@@ -169,7 +169,7 @@ const trustSignals = [
     <v-col cols="12">
       <MyBanner
           bg-variation="var2"
-          button-icon=" mdi-magnify"
+          button-icon="$mdi-magnify"
           button-text="learn more"
           route-path="/team"
           title="Cloud native. AI-powered. Production-ready."

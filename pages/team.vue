@@ -23,27 +23,27 @@ useHead({
 
 const capabilities = [
   {
-    icon: 'mdi-cloud-outline',
+    icon: '$mdi-cloud-outline',
     title: 'Cloud Native Solutions',
     description: 'We architect and build resilient, scalable systems on AWS, GCP, and Azure. From Kubernetes orchestration to serverless functions, we design infrastructure that grows with your business.',
   },
   {
-    icon: 'mdi-robot-outline',
+    icon: '$mdi-robot-outline',
     title: 'AI & Agentic Development',
     description: 'We build intelligent systems that go beyond simple automation. From LLM-powered agents to custom AI pipelines, we help you harness the full potential of modern AI to solve real business problems.',
   },
   {
-    icon: 'mdi-rocket-launch-outline',
+    icon: '$mdi-rocket-launch-outline',
     title: 'SaaS Platforms',
     description: 'We design, build, and ship SaaS products end-to-end. Multi-tenant architectures, subscription billing, onboarding flows, analytics dashboards — we handle the full stack so you can focus on your users.',
   },
   {
-    icon: 'mdi-infinity',
+    icon: '$mdi-infinity',
     title: 'DevOps & Platform Engineering',
     description: 'CI/CD pipelines, infrastructure as code, observability, and developer experience. We build the platforms and toolchains that let engineering teams ship faster with confidence.',
   },
   {
-    icon: 'mdi-server-outline',
+    icon: '$mdi-server-outline',
     title: 'Backend Engineering',
     description: 'High-performance APIs, event-driven architectures, and distributed systems built with Go, Java, and TypeScript. We write backend code that is clean, tested, and ready for production traffic.',
   },
@@ -119,7 +119,7 @@ const capabilities = [
     <v-col cols="12">
       <MyBanner
           bg-variation="var4"
-          button-icon="mdi-chat-outline"
+          button-icon="$mdi-chat-outline"
           button-text=" Let's talk"
           route-path="/contact"
           text="Let's build something great together."

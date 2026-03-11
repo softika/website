@@ -188,16 +188,12 @@ function isSendReady() {
       <v-col cols="12">
         <v-snackbar v-model="sendSuccess" color="success">
           <span>Message sent successfully</span>
-          <v-icon dark>
-            mdi-checkbox-marked-circle
-          </v-icon>
+          <v-icon dark icon="$mdi-checkbox-marked-circle"/>
         </v-snackbar>
         <v-snackbar v-model="sendError" color="error">
           <span>Message sent failed</span>
           <p>Please try later</p>
-          <v-icon dark>
-            alert-circle-outline
-          </v-icon>
+          <v-icon dark icon="$alert-circle-outline"/>
         </v-snackbar>
       </v-col>
     </v-row>
