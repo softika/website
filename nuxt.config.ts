@@ -13,7 +13,7 @@ export default defineNuxtConfig({
         },
     },
 
-    devtools: {enabled: true},
+    devtools: {enabled: process.env.NODE_ENV === 'development'},
     css: [
         'vuetify/lib/styles/main.css',
         '@/style/main.sass',
@@ -43,6 +43,17 @@ export default defineNuxtConfig({
                 transformAssetUrls,
             },
         },
+        build: {
+            terserOptions: {
+                compress: {
+                    drop_console: true,
+                    drop_debugger: true,
+                },
+            },
+        },
+    },
+    nitro: {
+        compressPublicAssets: {brotli: true, gzip: true},
     },
     runtimeConfig: {
         public: {
