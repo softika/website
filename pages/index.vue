@@ -3,6 +3,23 @@ import {useDisplay} from 'vuetify'
 
 const {mdAndUp} = useDisplay()
 
+useSeoMeta({
+  title: 'Softika — AI Agents, Secure Automation & SaaS Engineering',
+  description: 'We build AI agents, secure automation pipelines, and scalable SaaS products. From LLM orchestration to cloud-native platforms — production-grade engineering from Vienna.',
+  ogTitle: 'Softika — AI Agents, Secure Automation & SaaS Engineering',
+  ogDescription: 'We build AI agents, secure automation pipelines, and scalable SaaS products. Production-grade engineering from Vienna.',
+  ogType: 'website',
+  ogUrl: 'https://www.softika.dev/',
+  ogSiteName: 'Softika',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Softika — AI Agents, Secure Automation & SaaS Engineering',
+  twitterDescription: 'We build AI agents, secure automation pipelines, and scalable SaaS products.',
+})
+
+useHead({
+  link: [{rel: 'canonical', href: 'https://www.softika.dev/'}],
+})
+
 const services = [
   {
     icon: 'mdi-robot-outline',

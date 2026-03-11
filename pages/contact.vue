@@ -4,6 +4,23 @@ import {reactive} from "vue"
 import {useChallengeV3} from 'vue-recaptcha'
 import emailjs from '@emailjs/browser';
 
+useSeoMeta({
+  title: 'Contact Us — Start Your AI or SaaS Project | Softika',
+  description: 'Get in touch with Softika to discuss your next AI agent, SaaS platform, or cloud-native project. Based in Vienna, working globally.',
+  ogTitle: 'Contact Us | Softika',
+  ogDescription: 'Get in touch to discuss your next AI agent, SaaS platform, or cloud-native project.',
+  ogType: 'website',
+  ogUrl: 'https://www.softika.dev/contact/',
+  ogSiteName: 'Softika',
+  twitterCard: 'summary',
+  twitterTitle: 'Contact Softika',
+  twitterDescription: 'Start your next AI or SaaS project with senior engineers from Vienna.',
+})
+
+useHead({
+  link: [{rel: 'canonical', href: 'https://www.softika.dev/contact/'}],
+})
+
 const response = ref()
 const checked = ref(false)
 const policy = ref(false)

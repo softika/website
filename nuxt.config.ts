@@ -6,16 +6,9 @@ export default defineNuxtConfig({
         head: {
             charset: 'utf-8',
             viewport: 'width=device-width, initial-scale=1',
-            title: 'Softika Software Development | SaaS Development, Cloud, Frontend, Backend API Services, Kubernetes, Cloud Native Solutions, AWS, GCP, Hetzner, Linode | Software Development Consultant | Softika',
-            meta: [
-                {
-                    name: 'description',
-                    content: 'Softika Software Development | SaaS Development, Cloud, Frontend, Backend API Services, Kubernetes, Cloud Native Solutions, AWS, GCP, Hetzner, Linode | Software Development Consultant | Softika'
-                },
-                {
-                    name: 'ogDescription',
-                    content: 'Softika Software Development | SaaS Development, Cloud, Frontend, Backend API Services, Kubernetes, Cloud Native Solutions, AWS, GCP, Hetzner, Linode | Software Development Consultant | Softika'
-                }
+            htmlAttrs: {lang: 'en'},
+            link: [
+                {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
             ],
         },
     },
@@ -65,10 +58,29 @@ export default defineNuxtConfig({
         },
     },
     site: {
-        url: 'https://www.softika.dev/',
+        url: 'https://www.softika.dev',
         trailingSlash: true,
         defaultLocale: 'en',
-        name: 'Softika Software Development',
-        description: 'Softika Software Development | SaaS Development, Cloud, Frontend, Backend API Services, Kubernetes, Cloud Native Solutions, AWS, GCP, Hetzner, Linode | Software Development Consultant | Softika',
+        name: 'Softika',
+    },
+    schemaOrg: {
+        identity: {
+            type: 'Organization',
+            name: 'Softika Software Development e.U.',
+            url: 'https://www.softika.dev',
+            logo: 'https://www.softika.dev/favicon.ico',
+            email: 'office@softika.dev',
+        },
+    },
+    ogImage: {
+        defaults: {
+            cacheMaxAgeSeconds: 60 * 60 * 24 * 7,
+        },
+    },
+    sitemap: {
+        xslColumns: [
+            {label: 'URL', width: '65%'},
+            {label: 'Last Modified', select: 'sitemap:lastmod', width: '25%'},
+        ],
     },
 })

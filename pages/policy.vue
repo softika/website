@@ -1,4 +1,18 @@
 <script lang="ts" setup>
+useSeoMeta({
+  title: 'Privacy Policy | Softika',
+  description: 'Softika privacy policy — how we collect, use, and protect your personal data. GDPR compliant.',
+  ogTitle: 'Privacy Policy | Softika',
+  ogDescription: 'How Softika collects, uses, and protects your personal data.',
+  ogType: 'website',
+  ogUrl: 'https://www.softika.dev/policy/',
+  ogSiteName: 'Softika',
+  robots: 'noindex, follow',
+})
+
+useHead({
+  link: [{rel: 'canonical', href: 'https://www.softika.dev/policy/'}],
+})
 </script>
 
 <template>

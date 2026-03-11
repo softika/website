@@ -1,5 +1,18 @@
 <script lang="ts" setup>
+useSeoMeta({
+  title: 'Imprint — Legal Information | Softika',
+  description: 'Legal information and company details for Softika Software Development e.U., Vienna, Austria.',
+  ogTitle: 'Imprint | Softika',
+  ogDescription: 'Legal information for Softika Software Development e.U.',
+  ogType: 'website',
+  ogUrl: 'https://www.softika.dev/imprint/',
+  ogSiteName: 'Softika',
+  robots: 'noindex, follow',
+})
 
+useHead({
+  link: [{rel: 'canonical', href: 'https://www.softika.dev/imprint/'}],
+})
 </script>
 
 <template>

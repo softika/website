@@ -4,6 +4,23 @@ import {useDisplay} from 'vuetify'
 
 const {mdAndUp} = useDisplay()
 
+useSeoMeta({
+  title: 'Our Expertise — Cloud Native, AI Agents, SaaS & DevOps | Softika',
+  description: 'A focused engineering studio specializing in AI agent development, cloud-native architecture, SaaS platforms, and DevOps. Senior engineers building production-grade software from Vienna.',
+  ogTitle: 'Our Expertise — Cloud Native, AI Agents, SaaS & DevOps | Softika',
+  ogDescription: 'A focused engineering studio specializing in AI agent development, cloud-native architecture, SaaS platforms, and DevOps.',
+  ogType: 'website',
+  ogUrl: 'https://www.softika.dev/team/',
+  ogSiteName: 'Softika',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Our Expertise | Softika',
+  twitterDescription: 'Cloud native. AI-powered. Production-ready. Senior engineers from Vienna.',
+})
+
+useHead({
+  link: [{rel: 'canonical', href: 'https://www.softika.dev/team/'}],
+})
+
 const capabilities = [
   {
     icon: 'mdi-cloud-outline',
