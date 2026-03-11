@@ -19,3 +19,6 @@ logs
 .idea
 
 package-lock.json
+
+.env
+.env.*
