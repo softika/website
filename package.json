@@ -1,34 +1,20 @@
 {
   "name": "softika",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxtjs/sitemap": "^7.6.0",
-    "nuxt": "^3.21.1",
-    "nuxt-link-checker": "^4.3.9",
-    "nuxt-og-image": "^5.1.13",
-    "nuxt-schema-org": "^4.1.3",
-    "sass": "^1.98.0",
-    "sass-loader": "^16.0.7",
-    "vite-plugin-vuetify": "^2.1.3",
-    "vue": "^3.5.30",
-    "vue-router": "^4.6.4",
-    "vuetify": "^3.12.2"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@mdi/js": "^7.4.47",
-    "@nuxtjs/robots": "^5.7.1",
     "@vercel/analytics": "^1.6.1",
-    "@vercel/speed-insights": "^1.3.1",
-    "vue-recaptcha": "^3.0.0-alpha.6"
+    "@vercel/speed-insights": "^1.3.1"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
   }
 }
