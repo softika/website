@@ -10,6 +10,8 @@ export default defineConfig({
         contact: resolve(__dirname, 'contact/index.html'),
         policy: resolve(__dirname, 'policy/index.html'),
         imprint: resolve(__dirname, 'imprint/index.html'),
+        blog: resolve(__dirname, 'blog/index.html'),
+        'blog-ai-agents-marketing': resolve(__dirname, 'blog/ai-agents-marketing/index.html'),
       },
     },
   },
