@@ -13,6 +13,7 @@ setupRouteButtons();
 setActiveNavigation();
 renderAllIcons();
 setupHeaderHideOnScroll();
+setupScrollToTop();
 
 if (document.body.dataset.page === 'contact') {
   initContactPage();
@@ -158,5 +159,20 @@ function setupHeaderHideOnScroll() {
     }
 
     lastScrollY = currentScrollY;
+  });
+}
+
+function setupScrollToTop() {
+  const btn = document.querySelector('[data-scroll-top]');
+  if (!(btn instanceof HTMLButtonElement)) {
+    return;
+  }
+
+  window.addEventListener('scroll', () => {
+    btn.hidden = window.scrollY < 300;
+  });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }

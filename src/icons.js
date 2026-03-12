@@ -1,5 +1,6 @@
 import {
   mdiAccountMultipleOutline,
+  mdiArrowUp,
   mdiAlertCircleOutline,
   mdiChatOutline,
   mdiCheckboxMarkedCircle,
@@ -26,6 +27,7 @@ import {
 export const icons = {
   'account-multiple-outline': mdiAccountMultipleOutline,
   'alert-circle-outline': mdiAlertCircleOutline,
+  'arrow-up': mdiArrowUp,
   'chat-outline': mdiChatOutline,
   'checkbox-marked-circle': mdiCheckboxMarkedCircle,
   'clock-fast': mdiClockFast,

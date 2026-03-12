@@ -120,6 +120,10 @@ img {
     padding: 2rem 0;
 }
 
+.section-compact {
+    padding: 0 0 2rem;
+}
+
 .text-center {
     text-align: center;
 }
@@ -168,7 +172,7 @@ img {
     position: sticky;
     top: 0;
     z-index: 30;
-    background: var(--color-background);
+    background: transparent;
     transition: transform 250ms ease;
 }
 
@@ -651,6 +655,37 @@ img {
     min-height: 44px;
 }
 
+.scroll-top-btn {
+    position: fixed;
+    right: 1.2rem;
+    bottom: 1.4rem;
+    z-index: 40;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background: var(--color-text);
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.scroll-top-btn[hidden] {
+    display: none;
+}
+
+.scroll-top-btn:hover {
+    transform: translateY(-2px);
+}
+
+.scroll-top-btn:active {
+    transform: translateY(0);
+}
+
 .snackbar {
     position: fixed;
     left: 50%;
@@ -892,7 +927,13 @@ img {
 
 @media (min-width: 1280px) {
     .capabilities-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .capability-card {
+        width: calc((100% - 2.4rem) / 3);
     }
 }
 
