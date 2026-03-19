@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            OpenClaw Security: How to Install It Without Getting Hacked |
+            Softika Blog
+        </title>
+        <meta
+            name="description"
+            content="OpenClaw gained 100,000 GitHub stars in under two weeks — and became 2026's first major AI agent security crisis. Here's what went wrong, what the real risks are, and how to harden your installation."
+        />
+        <link
+            rel="canonical"
+            href="https://www.softika.dev/blog/openclaw-security/"
+        />
+        <meta
+            property="og:title"
+            content="OpenClaw Security: How to Install It Without Getting Hacked"
+        />
+        <meta
+            property="og:description"
+            content="OpenClaw gained 100,000 GitHub stars in under two weeks — and became 2026's first major AI agent security crisis. Here's what went wrong and how to harden your installation."
+        />
+        <meta property="og:type" content="article" />
+        <meta
+            property="og:url"
+            content="https://www.softika.dev/blog/openclaw-security/"
+        />
+        <meta property="og:site_name" content="Softika" />
+        <meta
+            property="og:image"
+            content="https://www.softika.dev/assets/imgs/og-image.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@SoftikaDev" />
+        <meta
+            name="twitter:title"
+            content="OpenClaw Security: How to Install It Without Getting Hacked"
+        />
+        <meta
+            name="twitter:description"
+            content="OpenClaw gained 100,000 GitHub stars in under two weeks — and became 2026's first major AI agent security crisis."
+        />
+        <meta
+            name="twitter:image"
+            content="https://www.softika.dev/assets/imgs/og-image.png"
+        />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "OpenClaw Security: How to Install It Without Getting Hacked",
+                "description": "OpenClaw gained 100,000 GitHub stars in under two weeks — and became 2026's first major AI agent security crisis. Here's what went wrong, what the real risks are, and how to harden your installation.",
+                "datePublished": "2026-03-19",
+                "author": {
+                    "@type": "Organization",
+                    "name": "Softika",
+                    "url": "https://www.softika.dev"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Softika",
+                    "url": "https://www.softika.dev",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://www.softika.dev/assets/imgs/black_logo_transparent.svg"
+                    }
+                },
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://www.softika.dev/blog/openclaw-security/"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.softika.dev/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Blog",
+                            "item": "https://www.softika.dev/blog/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "OpenClaw Security: How to Install It Without Getting Hacked",
+                            "item": "https://www.softika.dev/blog/openclaw-security/"
+                        }
+                    ]
+                }
+            }
+        </script>
+    </head>
+    <body data-page="blog-post">
+        <div class="site">
+            <header class="site-header">
+                <div class="container header-inner">
+                    <a class="logo-link" href="/" aria-label="Softika home">
+                        <img
+                            src="/assets/imgs/black_logo_transparent.svg"
+                            alt="softika logo symbol"
+                        />
+                    </a>
+
+                    <nav class="desktop-nav" aria-label="Main navigation">
+                        <a class="nav-link" data-nav-link href="/">Home</a>
+                        <a class="nav-link" data-nav-link href="/team/">Team</a>
+                        <a class="nav-link" data-nav-link href="/blog/"
+                            >Blog</a
+                        >
+                        <a class="nav-link" data-nav-link href="/contact/"
+                            >Contact</a
+                        >
+                    </nav>
+
+                    <button
+                        class="mobile-menu-btn"
+                        data-mobile-toggle
+                        type="button"
+                        aria-expanded="false"
+                        aria-label="Open navigation"
+                    >
+                        <span
+                            class="icon-slot"
+                            data-icon="menu"
+                            data-size="30"
+                        ></span>
+                    </button>
+                </div>
+
+                <nav
+                    class="mobile-nav"
+                    data-mobile-nav
+                    hidden
+                    aria-label="Mobile navigation"
+                >
+                    <ul class="mobile-nav-list">
+                        <li>
+                            <a class="mobile-nav-link" data-nav-link href="/">
+                                <span
+                                    class="icon-slot"
+                                    data-icon="home-outline"
+                                    data-size="20"
+                                ></span>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="mobile-nav-link"
+                                data-nav-link
+                                href="/team/"
+                            >
+                                <span
+                                    class="icon-slot"
+                                    data-icon="account-multiple-outline"
+                                    data-size="20"
+                                ></span>
+                                Team
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="mobile-nav-link"
+                                data-nav-link
+                                href="/blog/"
+                            >
+                                <span
+                                    class="icon-slot"
+                                    data-icon="book-open-outline"
+                                    data-size="20"
+                                ></span>
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="mobile-nav-link"
+                                data-nav-link
+                                href="/contact/"
+                            >
+                                <span
+                                    class="icon-slot"
+                                    data-icon="email-outline"
+                                    data-size="20"
+                                ></span>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="site-main">
+                <div class="container">
+                    <article class="blog-post">
+                        <header class="blog-post-header">
+                            <nav
+                                class="blog-breadcrumb"
+                                aria-label="Breadcrumb"
+                            >
+                                <a class="blog-breadcrumb-link" href="/blog/"
+                                    >&larr; Back to Blog</a
+                                >
+                            </nav>
+                            <div class="blog-post-tags">
+                                <span class="chip">Security</span>
+                                <span class="chip">AI Agents</span>
+                                <span class="chip">OpenClaw</span>
+                                <span class="chip">DevOps</span>
+                            </div>
+                            <h1 class="blog-post-title">
+                                OpenClaw Security: How to Install It Without
+                                Getting Hacked
+                            </h1>
+                            <div class="blog-post-meta">
+                                <span class="blog-post-date"
+                                    >March 19, 2026</span
+                                >
+                                <span
+                                    class="blog-post-meta-sep"
+                                    aria-hidden="true"
+                                    >&middot;</span
+                                >
+                                <span class="blog-post-reading-time"
+                                    >12 min read</span
+                                >
+                            </div>
+                        </header>
+
+                        <div class="blog-post-body">
+                            <p class="blog-post-lead">
+                                In January 2026, OpenClaw crossed 100,000 GitHub
+                                stars in under two weeks. By February,
+                                security researchers had found over 21,000
+                                publicly exposed instances leaking API keys and
+                                OAuth tokens. A critical remote code execution
+                                vulnerability scored 8.8 on the CVSS scale. And
+                                341 malicious skills had already been planted in
+                                the official marketplace. This is the story of
+                                what went wrong, what the actual attack surface
+                                looks like, and how to run OpenClaw without
+                                becoming the next headline.
+                            </p>
+
+                            <h2>What OpenClaw Actually Is</h2>
+
+                            <p>
+                                OpenClaw is an open-source personal AI assistant
+                                that runs locally on your machine. It connects
+                                to chat apps you already use (WhatsApp,
+                                Telegram, Discord, Slack, Signal, iMessage) and
+                                gives you a persistent, autonomous agent that
+                                can browse the web, run shell commands, manage
+                                files, and integrate with 50+ services like
+                                Gmail, GitHub, Spotify, and Obsidian.
+                            </p>
+
+                            <p>
+                                It works with Anthropic Claude, OpenAI models,
+                                or local LLMs. It learns your preferences over
+                                time, runs cron jobs, monitors things in the
+                                background, and can even write and update its
+                                own skills. The extensibility is impressive. The
+                                attack surface is enormous.
+                            </p>
+
+                            <h2>The Security Timeline: What Happened</h2>
+
+                            <p>
+                                The incidents came fast. Here's the condensed
+                                timeline:
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <strong>January 27&ndash;29, 2026:</strong>
+                                    The "ClawHavoc" campaign. Attackers uploaded
+                                    341 malicious skills to ClawHub, OpenClaw's
+                                    public marketplace. The skills looked
+                                    legitimate, with professional documentation
+                                    and innocuous names. Once installed, they
+                                    deployed keyloggers on Windows and Atomic
+                                    Stealer malware on macOS. Roughly 12% of the
+                                    entire registry (2,857 entries at the time)
+                                    was compromised.
+                                </li>
+                                <li>
+                                    <strong>January 30, 2026:</strong>
+                                    CVE-2026-25253 was patched. CVSS 8.8. The
+                                    vulnerability allowed one-click remote code
+                                    execution: an attacker creates a malicious
+                                    webpage, the victim visits it, and the
+                                    OpenClaw gateway's authentication token
+                                    leaks via cross-site WebSocket hijacking.
+                                    Full administrative control in milliseconds.
+                                </li>
+                                <li>
+                                    <strong>February 3, 2026:</strong> Public
+                                    disclosure of CVE-2026-25253 plus two
+                                    additional command injection
+                                    vulnerabilities.
+                                </li>
+                                <li>
+                                    <strong>February 2026:</strong> The Moltbot
+                                    breach. A third-party service in the
+                                    OpenClaw ecosystem was compromised, exposing
+                                    35,000 email addresses and 1.5 million agent
+                                    API tokens.
+                                </li>
+                                <li>
+                                    <strong>February 2026:</strong> Security
+                                    researchers identified 21,639 publicly
+                                    accessible OpenClaw instances in the first
+                                    wave — a number that grew to over 42,000
+                                    by the time CVE-2026-25253 was publicly
+                                    disclosed. Many were leaking API keys, OAuth
+                                    tokens, and plaintext credentials.
+                                </li>
+                            </ul>
+
+                            <p>
+                                Every major security vendor weighed in. Palo
+                                Alto Networks, Trend Micro, Kaspersky, and Cisco
+                                all published analyses. The consensus: OpenClaw
+                                is powerful, but running it with default
+                                settings on a public network is reckless.
+                            </p>
+
+                            <h2>The Three Attack Vectors That Matter</h2>
+
+                            <h3>1. Exposed Gateway Instances</h3>
+
+                            <p>
+                                OpenClaw runs a gateway server on port 18789.
+                                If that port is reachable from the internet,
+                                with a weak or default token, an attacker gets
+                                full control of your agent. They can read your
+                                messages, access your connected services, and
+                                execute arbitrary commands on your machine.
+                            </p>
+
+                            <p>
+                                The first step is to never bind to
+                                <code>0.0.0.0</code>. Bind to localhost only.
+                                Use SSH tunneling or an identity-aware VPN like
+                                Tailscale for remote access.
+                            </p>
+
+                            <p>
+                                <strong>Important caveat:</strong> localhost
+                                binding alone does <em>not</em> protect against
+                                CVE-2026-25253. That vulnerability works by
+                                tricking your own browser into acting as a
+                                bridge to your local gateway — so even an
+                                instance bound to <code>127.0.0.1</code> can be
+                                fully compromised by visiting a single malicious
+                                webpage. Patching to version 2026.1.29 or later
+                                is essential. Treat network isolation as one
+                                layer of a defence-in-depth strategy, not a
+                                complete fix on its own.
+                            </p>
+
+                            <h3>2. Malicious Skills from ClawHub</h3>
+
+                            <p>
+                                Skills in OpenClaw execute arbitrary code,
+                                including shell commands. The ClawHavoc campaign
+                                proved that the marketplace has no effective
+                                vetting process. A skill with a clean README and
+                                a plausible name can install a keylogger.
+                            </p>
+
+                            <p>
+                                Treat every skill like an untrusted npm package
+                                from an unknown author. Audit the source before
+                                installing. Run new skills in sandboxed
+                                containers with minimal permissions until you've
+                                verified them.
+                            </p>
+
+                            <h3>3. Prompt Injection and Indirect Attacks</h3>
+
+                            <p>
+                                OpenClaw agents browse the web, read files, and
+                                process messages from external sources. Every
+                                one of those inputs is a potential prompt
+                                injection vector. A malicious web page, a
+                                crafted email, or a poisoned document can
+                                instruct the agent to exfiltrate data or run
+                                commands.
+                            </p>
+
+                            <p>
+                                This is the hardest vector to close completely.
+                                The mitigations are layered: restrict tool
+                                access, sandbox aggressively, and never give an
+                                agent more permissions than it needs.
+                            </p>
+
+                            <h2>Hardening Guide: Step by Step</h2>
+
+                            <p>
+                                If you're going to run OpenClaw, here's the
+                                minimum you should do before your first session.
+                                All configuration changes below go in
+                                <code>~/.openclaw/openclaw.json</code>, the
+                                main config file. You can also edit it via
+                                <code>openclaw config get/set</code> from the
+                                command line.
+                            </p>
+
+                            <h3>Lock Down the Gateway</h3>
+
+                            <p>
+                                In your <code>openclaw.json</code>, bind to
+                                loopback only and set a strong authentication
+                                token:
+                            </p>
+
+                            <pre><code>// ~/.openclaw/openclaw.json
+gateway: {
+  bind: "loopback",
+  port: 18789,
+  auth: { token: "YOUR_SECRET_TOKEN" }
+}</code></pre>
+
+                            <p>
+                                Rotate <code>gateway.auth.token</code>
+                                regularly. Never hard-code tokens in containers.
+                                Use Kubernetes Secrets or a vault like
+                                HashiCorp Vault. Set up firewall rules to block
+                                port 18789 from any non-local traffic.
+                            </p>
+
+                            <h3>Restrict Tool Access</h3>
+
+                            <p>
+                                OpenClaw's default tool permissions are too
+                                broad. Use explicit allowlists:
+                            </p>
+
+                            <pre><code>// ~/.openclaw/openclaw.json
+tools.allow: ["memory_get", "browser.search"]
+tools.elevated: []</code></pre>
+
+                            <p>
+                                Deny rules override allow rules. Withhold
+                                <code>exec</code> and
+                                <code>apply_patch</code> unless strictly
+                                required. Block destructive capabilities like
+                                <code>write</code>, <code>edit</code>, and
+                                <code>process</code> by default, then grant
+                                them per-agent only where justified.
+                            </p>
+
+                            <h3>Enable Sandboxing</h3>
+
+                            <p>
+                                OpenClaw offers three sandbox levels in
+                                <code>agents.defaults.sandbox</code>:
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <strong>Off</strong> &mdash; no isolation.
+                                    Only acceptable for single-user local
+                                    setups where you trust yourself not to
+                                    install anything malicious.
+                                </li>
+                                <li>
+                                    <strong>Non-main</strong> (default) &mdash;
+                                    group chats and secondary threads run
+                                    isolated; your primary session runs on the
+                                    host.
+                                </li>
+                                <li>
+                                    <strong>All</strong> &mdash; every tool call
+                                    runs inside a Docker container. This is the
+                                    right choice for anything connected to
+                                    external channels.
+                                </li>
+                            </ul>
+
+                            <p>
+                                For any agent that processes messages from
+                                other people, use <code>"all"</code>. No
+                                exceptions.
+                            </p>
+
+                            <h3>Secure the State Directory</h3>
+
+                            <p>
+                                The <code>~/.openclaw</code> directory contains
+                                your credentials, conversation history, agent
+                                memory, and cached OAuth tokens. Lock it down:
+                            </p>
+
+                            <pre><code>chmod 700 ~/.openclaw</code></pre>
+
+                            <p>
+                                Scan this directory regularly for overly
+                                permissive files. Never store secrets in
+                                plaintext in <code>AGENTS.md</code> or
+                                <code>SOUL.md</code>. Use OpenClaw's built-in
+                                secret store or mount external vault tokens as
+                                read-only volumes.
+                            </p>
+
+                            <h3>Configure Channel Policies</h3>
+
+                            <p>
+                                Set strict DM policies on every messaging
+                                channel:
+                            </p>
+
+                            <pre><code>// ~/.openclaw/openclaw.json
+channels: {
+  telegram: {
+    enabled: true,
+    botToken: "TOKEN",
+    dmPolicy: "pairing",
+    allowFrom: ["tg:123"]
+  }
+}</code></pre>
+
+                            <p>
+                                The <code>"pairing"</code> policy requires a
+                                one-time confirmation code from unknown
+                                contacts. Never use <code>"open"</code> unless
+                                you have a very specific reason and understand
+                                the risk. Require explicit mentions in group
+                                chats.
+                            </p>
+
+                            <h3>Run the Built-in Security Audit</h3>
+
+                            <p>
+                                OpenClaw ships with diagnostic and audit tools.
+                                Run them after every configuration change and
+                                every new skill installation:
+                            </p>
+
+                            <pre><code>openclaw doctor --deep
+openclaw security audit --fix
+openclaw sandbox explain</code></pre>
+
+                            <h2>Docker Deployment: The Safer Path</h2>
+
+                            <p>
+                                Running OpenClaw directly on your primary
+                                machine is a risk. A compromised agent has
+                                access to everything your user account can
+                                reach. Docker provides meaningful isolation.
+                            </p>
+
+                            <p>Key container hardening measures:</p>
+
+                            <ul>
+                                <li>
+                                    Run as a non-root user
+                                    (<code>runAsUser: 1000</code>)
+                                </li>
+                                <li>Use a read-only filesystem where possible</li>
+                                <li>Drop all capabilities and add back only what's needed</li>
+                                <li>Mount volumes with strict, narrow paths</li>
+                                <li>
+                                    Restrict outbound network access to only
+                                    required domains
+                                </li>
+                            </ul>
+
+                            <p>
+                                For production or team deployments, a
+                                Kubernetes setup with separate pods per agent,
+                                persistent volume claims for state, and
+                                proper RBAC gives you the isolation guarantees
+                                that a single Docker container cannot.
+                            </p>
+
+                            <h2>The Corporate Risk: Shadow AI Agents</h2>
+
+                            <p>
+                                The biggest threat OpenClaw poses to
+                                organisations is not technical. It's
+                                organisational.
+                            </p>
+
+                            <p>
+                                When an employee connects OpenClaw to their
+                                work Slack, Gmail, or Google Drive, the agent
+                                gains access to Slack messages and files,
+                                emails and calendar entries, cloud-stored
+                                documents, and OAuth tokens that enable lateral
+                                movement across services. Traditional security
+                                tools don't catch this. Endpoint security sees
+                                processes but doesn't understand agent
+                                behaviour. Network tools see API calls but
+                                can't distinguish legitimate automation from
+                                compromise. Identity systems see OAuth grants
+                                but don't flag AI agent connections as unusual.
+                            </p>
+
+                            <p>
+                                If your team uses OpenClaw, establish a policy.
+                                Define which integrations are allowed, require
+                                sandboxing, audit OAuth grants, and make sure
+                                your security team has visibility into what
+                                agents are connected to which services.
+                            </p>
+
+                            <h2>The Deployment Checklist</h2>
+
+                            <p>
+                                Before you run OpenClaw in any environment,
+                                verify every item:
+                            </p>
+
+                            <ul>
+                                <li>Gateway bound to localhost only</li>
+                                <li>Strong, rotated authentication token</li>
+                                <li>Firewall rules blocking port 18789 externally</li>
+                                <li>
+                                    <code>~/.openclaw</code> directory at 700
+                                    permissions
+                                </li>
+                                <li>Tool allowlist configured per agent</li>
+                                <li>
+                                    Sandbox mode set to <code>"all"</code> for
+                                    external-facing agents
+                                </li>
+                                <li>DM policy set to <code>"pairing"</code></li>
+                                <li>
+                                    No secrets in plaintext workspace files
+                                </li>
+                                <li>
+                                    <code>openclaw security audit</code> passing
+                                    clean
+                                </li>
+                                <li>
+                                    Every ClawHub skill audited before
+                                    installation
+                                </li>
+                                <li>Nightly backups of state directory</li>
+                                <li>
+                                    Patched to version 2026.1.29 or later
+                                    (CVE-2026-25253 fix)
+                                </li>
+                            </ul>
+
+                            <h2>The Bottom Line</h2>
+
+                            <p>
+                                OpenClaw is a genuinely useful tool. A
+                                persistent AI agent that runs locally, connects
+                                to your existing chat apps, and integrates with
+                                dozens of services solves a real problem. But
+                                its power is exactly what makes it dangerous
+                                when misconfigured.
+                            </p>
+
+                            <p>
+                                The defaults are not secure enough for
+                                production use. The marketplace has been
+                                compromised. The gateway has had critical
+                                vulnerabilities. Running it without hardening is
+                                like running an SSH server with password
+                                authentication on the open internet: it might
+                                work for a while, but the odds are not in your
+                                favour.
+                            </p>
+
+                            <p>
+                                Take the time to lock it down properly. The
+                                hardening steps above are not optional. They're
+                                the minimum.
+                            </p>
+                        </div>
+
+                        <footer class="blog-post-footer">
+                            <div class="blog-post-cta">
+                                <h2 class="blog-post-cta-title">
+                                    Need help securing your AI infrastructure?
+                                </h2>
+                                <p class="blog-post-cta-text">
+                                    We build and harden production-grade AI
+                                    agent deployments. If you're running
+                                    OpenClaw or similar tools in a team
+                                    environment, let's make sure your setup is
+                                    airtight.
+                                </p>
+                                <button
+                                    class="btn btn-primary"
+                                    type="button"
+                                    data-route-path="/contact/"
+                                >
+                                    <span
+                                        class="icon-slot"
+                                        data-icon="chat-outline"
+                                        data-size="20"
+                                    ></span>
+                                    Get in touch
+                                </button>
+                            </div>
+                            <a class="blog-back-link" href="/blog/"
+                                >&larr; Back to Blog</a
+                            >
+                        </footer>
+                    </article>
+                </div>
+            </main>
+
+            <footer class="site-footer">
+                <div class="container footer-inner">
+                    <a class="footer-logo" href="/" aria-label="Softika home">
+                        <img
+                            src="/assets/imgs/black_logo_transparent.svg"
+                            alt="softika logo symbol"
+                        />
+                    </a>
+
+                    <nav class="footer-links" aria-label="Footer links">
+                        <a class="footer-link" href="/">Home</a>
+                        <a class="footer-link" href="/contact/">Contact</a>
+                        <a class="footer-link" href="/team/">Team</a>
+                        <a class="footer-link" href="/blog/">Blog</a>
+                        <a class="footer-link" href="/policy/"
+                            >Privacy Policy</a
+                        >
+                        <a class="footer-link" href="/imprint/">Imprint</a>
+                    </nav>
+
+                    <div class="footer-social">
+                        <a
+                            class="social-link"
+                            href="https://www.linkedin.com/company/softika"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            <span
+                                class="icon-slot"
+                                data-icon="linkedin"
+                                data-size="24"
+                            ></span>
+                        </a>
+                        <a
+                            class="social-link"
+                            href="https://www.instagram.com/softika.dev/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                        >
+                            <span
+                                class="icon-slot"
+                                data-icon="instagram"
+                                data-size="24"
+                            ></span>
+                        </a>
+                        <a
+                            class="social-link"
+                            href="https://twitter.com/SoftikaDev"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Twitter"
+                        >
+                            <span
+                                class="icon-slot"
+                                data-icon="twitter"
+                                data-size="24"
+                            ></span>
+                        </a>
+                        <a
+                            class="social-link"
+                            href="https://www.facebook.com/profile.php?id=61555499463949"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook"
+                        >
+                            <span
+                                class="icon-slot"
+                                data-icon="facebook"
+                                data-size="24"
+                            ></span>
+                        </a>
+                    </div>
+
+                    <p class="footer-copy">
+                        All rights reserved &copy;
+                        <span data-current-year></span>, Softika Team
+                    </p>
+                </div>
+            </footer>
+        </div>
+
+        <button
+            class="scroll-top-btn"
+            data-scroll-top
+            type="button"
+            aria-label="Scroll to top"
+            hidden
+        >
+            <span class="icon-slot" data-icon="arrow-up" data-size="24"></span>
+        </button>
+
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>
