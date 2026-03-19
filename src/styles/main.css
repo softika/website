@@ -671,7 +671,9 @@ img {
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-    transition: opacity 200ms ease, transform 200ms ease;
+    transition:
+        opacity 200ms ease,
+        transform 200ms ease;
 }
 
 .scroll-top-btn[hidden] {
@@ -795,30 +797,6 @@ img {
 .footer-copy {
     margin: 2.5rem 0 0;
     font-size: 1rem;
-}
-
-.imprint-title {
-    margin: 0;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.imprint-subtitle {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-}
-
-.imprint-line {
-    margin: 0;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 700;
-}
-
-.imprint-line a {
-    color: #0b5f7d;
 }
 
 .policy-page h1,

@@ -1,191 +1,342 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog — AI Agents, Automation &amp; Engineering Insights | Softika</title>
-    <meta
-      name="description"
-      content="Practical insights on AI agents, automation engineering, and building production-grade software. Written by the Softika team from Vienna."
-    />
-    <link rel="canonical" href="https://www.softika.dev/blog/" />
-    <meta property="og:title" content="Blog — AI Agents, Automation &amp; Engineering Insights | Softika" />
-    <meta
-      property="og:description"
-      content="Practical insights on AI agents, automation engineering, and building production-grade software."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.softika.dev/blog/" />
-    <meta property="og:site_name" content="Softika" />
-    <meta property="og:image" content="https://www.softika.dev/assets/imgs/og-image.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@SoftikaDev" />
-    <meta name="twitter:title" content="Blog | Softika" />
-    <meta name="twitter:description" content="Practical insights on AI agents, automation, and engineering from the Softika team." />
-    <meta name="twitter:image" content="https://www.softika.dev/assets/imgs/og-image.png" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.softika.dev/" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.softika.dev/blog/" }
-        ]
-      }
-    </script>
-  </head>
-  <body data-page="blog">
-    <div class="site">
-      <header class="site-header">
-        <div class="container header-inner">
-          <a class="logo-link" href="/" aria-label="Softika home">
-            <img src="/assets/imgs/black_logo_transparent.svg" alt="softika logo symbol" />
-          </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Blog — AI Agents, Automation &amp; Engineering Insights | Softika
+        </title>
+        <meta
+            name="description"
+            content="Practical insights on AI agents, automation engineering, and building production-grade software. Written by the Softika team from Vienna."
+        />
+        <link rel="canonical" href="https://www.softika.dev/blog/" />
+        <meta
+            property="og:title"
+            content="Blog — AI Agents, Automation &amp; Engineering Insights | Softika"
+        />
+        <meta
+            property="og:description"
+            content="Practical insights on AI agents, automation engineering, and building production-grade software."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.softika.dev/blog/" />
+        <meta property="og:site_name" content="Softika" />
+        <meta
+            property="og:image"
+            content="https://www.softika.dev/assets/imgs/og-image.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@SoftikaDev" />
+        <meta name="twitter:title" content="Blog | Softika" />
+        <meta
+            name="twitter:description"
+            content="Practical insights on AI agents, automation, and engineering from the Softika team."
+        />
+        <meta
+            name="twitter:image"
+            content="https://www.softika.dev/assets/imgs/og-image.png"
+        />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.softika.dev/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Blog",
+                        "item": "https://www.softika.dev/blog/"
+                    }
+                ]
+            }
+        </script>
+    </head>
+    <body data-page="blog">
+        <div class="site">
+            <header class="site-header">
+                <div class="container header-inner">
+                    <a class="logo-link" href="/" aria-label="Softika home">
+                        <img
+                            src="/assets/imgs/black_logo_transparent.svg"
+                            alt="softika logo symbol"
+                        />
+                    </a>
 
-          <nav class="desktop-nav" aria-label="Main navigation">
-            <a class="nav-link" data-nav-link href="/">Home</a>
-            <a class="nav-link" data-nav-link href="/team/">Team</a>
-            <a class="nav-link" data-nav-link href="/blog/">Blog</a>
-            <a class="nav-link" data-nav-link href="/contact/">Contact</a>
-          </nav>
+                    <nav class="desktop-nav" aria-label="Main navigation">
+                        <a class="nav-link" data-nav-link href="/">Home</a>
+                        <a class="nav-link" data-nav-link href="/team/">Team</a>
+                        <a class="nav-link" data-nav-link href="/blog/">Blog</a>
+                        <a class="nav-link" data-nav-link href="/contact/"
+                            >Contact</a
+                        >
+                    </nav>
 
-          <button class="mobile-menu-btn" data-mobile-toggle type="button" aria-expanded="false" aria-label="Open navigation">
-            <span class="icon-slot" data-icon="menu" data-size="30"></span>
-          </button>
+                    <button
+                        class="mobile-menu-btn"
+                        data-mobile-toggle
+                        type="button"
+                        aria-expanded="false"
+                        aria-label="Open navigation"
+                    >
+                        <span
+                            class="icon-slot"
+                            data-icon="menu"
+                            data-size="30"
+                        ></span>
+                    </button>
+                </div>
+
+                <nav
+                    class="mobile-nav"
+                    data-mobile-nav
+                    hidden
+                    aria-label="Mobile navigation"
+                >
+                    <ul class="mobile-nav-list">
+                        <li>
+                            <a class="mobile-nav-link" data-nav-link href="/">
+                                <span
+                                    class="icon-slot"
+                                    data-icon="home-outline"
+                                    data-size="20"
+                                ></span>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="mobile-nav-link"
+                                data-nav-link
+                                href="/team/"
+                            >
+                                <span
+                                    class="icon-slot"
+                                    data-icon="account-multiple-outline"
+                                    data-size="20"
+                                ></span>
+                                Team
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="mobile-nav-link"
+                                data-nav-link
+                                href="/blog/"
+                            >
+                                <span
+                                    class="icon-slot"
+                                    data-icon="book-open-outline"
+                                    data-size="20"
+                                ></span>
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="mobile-nav-link"
+                                data-nav-link
+                                href="/contact/"
+                            >
+                                <span
+                                    class="icon-slot"
+                                    data-icon="email-outline"
+                                    data-size="20"
+                                ></span>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="site-main">
+                <div class="container">
+                    <section class="section section-tight">
+                        <div class="banner banner-shell">
+                            <div class="banner-bg banner-bg-var1-main"></div>
+                            <div class="banner-bg banner-bg-var1-accent"></div>
+                            <div class="banner-panel">
+                                <h1 class="banner-title">The Softika Blog</h1>
+                                <p class="banner-text">
+                                    Practical insights on AI agents, automation
+                                    &amp; engineering.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section section-tight">
+                        <div class="blog-grid">
+                            <article class="blog-card">
+                                <div class="blog-card-tags">
+                                    <span class="chip">Security</span>
+                                    <span class="chip">AI Agents</span>
+                                    <span class="chip">OpenClaw</span>
+                                </div>
+                                <h2 class="blog-card-title">
+                                    <a
+                                        class="blog-card-link"
+                                        href="/blog/openclaw-security/"
+                                    >
+                                        OpenClaw Security: How to Install It
+                                        Without Getting Hacked
+                                    </a>
+                                </h2>
+                                <p class="blog-card-excerpt">
+                                    OpenClaw gained 135,000 GitHub stars in
+                                    weeks — and became 2026's first major AI
+                                    agent security crisis. Here's what went
+                                    wrong, what the real risks are, and how to
+                                    harden your installation before it's too
+                                    late.
+                                </p>
+                                <div class="blog-card-footer">
+                                    <span class="blog-card-date"
+                                        >March 19, 2026</span
+                                    >
+                                    <span class="blog-card-reading-time"
+                                        >12 min read</span
+                                    >
+                                </div>
+                            </article>
+
+                            <article class="blog-card">
+                                <div class="blog-card-tags">
+                                    <span class="chip">AI Agents</span>
+                                    <span class="chip">Marketing</span>
+                                    <span class="chip">Claude</span>
+                                </div>
+                                <h2 class="blog-card-title">
+                                    <a
+                                        class="blog-card-link"
+                                        href="/blog/ai-agents-marketing/"
+                                    >
+                                        AI Agents, Claude, and the Future of
+                                        Marketing Automation
+                                    </a>
+                                </h2>
+                                <p class="blog-card-excerpt">
+                                    Marketing teams today are drowning in
+                                    repetitive, time-consuming tasks. AI agents
+                                    — powered by models like Claude — are
+                                    changing that. Here's how autonomous agents
+                                    can take over the busywork and free your
+                                    team to focus on strategy.
+                                </p>
+                                <div class="blog-card-footer">
+                                    <span class="blog-card-date"
+                                        >March 12, 2026</span
+                                    >
+                                    <span class="blog-card-reading-time"
+                                        >7 min read</span
+                                    >
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </main>
+
+            <footer class="site-footer">
+                <div class="container footer-inner">
+                    <a class="footer-logo" href="/" aria-label="Softika home">
+                        <img
+                            src="/assets/imgs/black_logo_transparent.svg"
+                            alt="softika logo symbol"
+                        />
+                    </a>
+
+                    <nav class="footer-links" aria-label="Footer links">
+                        <a class="footer-link" href="/">Home</a>
+                        <a class="footer-link" href="/contact/">Contact</a>
+                        <a class="footer-link" href="/team/">Team</a>
+                        <a class="footer-link" href="/blog/">Blog</a>
+                        <a class="footer-link" href="/policy/"
+                            >Privacy Policy</a
+                        >
+                    </nav>
+
+                    <div class="footer-social">
+                        <a
+                            class="social-link"
+                            href="https://www.linkedin.com/company/softika"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            <span
+                                class="icon-slot"
+                                data-icon="linkedin"
+                                data-size="24"
+                            ></span>
+                        </a>
+                        <a
+                            class="social-link"
+                            href="https://www.instagram.com/softika.dev/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                        >
+                            <span
+                                class="icon-slot"
+                                data-icon="instagram"
+                                data-size="24"
+                            ></span>
+                        </a>
+                        <a
+                            class="social-link"
+                            href="https://twitter.com/SoftikaDev"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Twitter"
+                        >
+                            <span
+                                class="icon-slot"
+                                data-icon="twitter"
+                                data-size="24"
+                            ></span>
+                        </a>
+                        <a
+                            class="social-link"
+                            href="https://www.facebook.com/profile.php?id=61555499463949"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook"
+                        >
+                            <span
+                                class="icon-slot"
+                                data-icon="facebook"
+                                data-size="24"
+                            ></span>
+                        </a>
+                    </div>
+
+                    <p class="footer-copy">
+                        All rights reserved &copy;
+                        <span data-current-year></span>, Softika Team
+                    </p>
+                </div>
+            </footer>
         </div>
 
-        <nav class="mobile-nav" data-mobile-nav hidden aria-label="Mobile navigation">
-          <ul class="mobile-nav-list">
-            <li>
-              <a class="mobile-nav-link" data-nav-link href="/">
-                <span class="icon-slot" data-icon="home-outline" data-size="20"></span>
-                Home
-              </a>
-            </li>
-            <li>
-              <a class="mobile-nav-link" data-nav-link href="/team/">
-                <span class="icon-slot" data-icon="account-multiple-outline" data-size="20"></span>
-                Team
-              </a>
-            </li>
-            <li>
-              <a class="mobile-nav-link" data-nav-link href="/blog/">
-                <span class="icon-slot" data-icon="book-open-outline" data-size="20"></span>
-                Blog
-              </a>
-            </li>
-            <li>
-              <a class="mobile-nav-link" data-nav-link href="/contact/">
-                <span class="icon-slot" data-icon="email-outline" data-size="20"></span>
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+        <button
+            class="scroll-top-btn"
+            data-scroll-top
+            type="button"
+            aria-label="Scroll to top"
+            hidden
+        >
+            <span class="icon-slot" data-icon="arrow-up" data-size="24"></span>
+        </button>
 
-      <main class="site-main">
-        <div class="container">
-          <section class="section section-tight">
-            <div class="banner banner-shell">
-              <div class="banner-bg banner-bg-var1-main"></div>
-              <div class="banner-bg banner-bg-var1-accent"></div>
-              <div class="banner-panel">
-                <h1 class="banner-title">The Softika Blog</h1>
-                <p class="banner-text">Practical insights on AI agents, automation &amp; engineering.</p>
-              </div>
-            </div>
-          </section>
-
-          <section class="section section-tight">
-            <div class="blog-grid">
-              <article class="blog-card">
-                <div class="blog-card-tags">
-                  <span class="chip">Security</span>
-                  <span class="chip">AI Agents</span>
-                  <span class="chip">OpenClaw</span>
-                </div>
-                <h2 class="blog-card-title">
-                  <a class="blog-card-link" href="/blog/openclaw-security/">
-                    OpenClaw Security: How to Install It Without Getting Hacked
-                  </a>
-                </h2>
-                <p class="blog-card-excerpt">
-                  OpenClaw gained 135,000 GitHub stars in weeks — and became 2026's first major AI agent security crisis.
-                  Here's what went wrong, what the real risks are, and how to harden your installation before it's too late.
-                </p>
-                <div class="blog-card-footer">
-                  <span class="blog-card-date">March 19, 2026</span>
-                  <span class="blog-card-reading-time">12 min read</span>
-                </div>
-              </article>
-
-              <article class="blog-card">
-                <div class="blog-card-tags">
-                  <span class="chip">AI Agents</span>
-                  <span class="chip">Marketing</span>
-                  <span class="chip">Claude</span>
-                </div>
-                <h2 class="blog-card-title">
-                  <a class="blog-card-link" href="/blog/ai-agents-marketing/">
-                    AI Agents, Claude, and the Future of Marketing Automation
-                  </a>
-                </h2>
-                <p class="blog-card-excerpt">
-                  Marketing teams today are drowning in repetitive, time-consuming tasks. AI agents — powered by models like
-                  Claude — are changing that. Here's how autonomous agents can take over the busywork and free your team to
-                  focus on strategy.
-                </p>
-                <div class="blog-card-footer">
-                  <span class="blog-card-date">March 12, 2026</span>
-                  <span class="blog-card-reading-time">7 min read</span>
-                </div>
-              </article>
-            </div>
-          </section>
-        </div>
-      </main>
-
-      <footer class="site-footer">
-        <div class="container footer-inner">
-          <a class="footer-logo" href="/" aria-label="Softika home">
-            <img src="/assets/imgs/black_logo_transparent.svg" alt="softika logo symbol" />
-          </a>
-
-          <nav class="footer-links" aria-label="Footer links">
-            <a class="footer-link" href="/">Home</a>
-            <a class="footer-link" href="/contact/">Contact</a>
-            <a class="footer-link" href="/team/">Team</a>
-            <a class="footer-link" href="/blog/">Blog</a>
-            <a class="footer-link" href="/policy/">Privacy Policy</a>
-            <a class="footer-link" href="/imprint/">Imprint</a>
-          </nav>
-
-          <div class="footer-social">
-            <a class="social-link" href="https://www.linkedin.com/company/softika" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <span class="icon-slot" data-icon="linkedin" data-size="24"></span>
-            </a>
-            <a class="social-link" href="https://www.instagram.com/softika.dev/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <span class="icon-slot" data-icon="instagram" data-size="24"></span>
-            </a>
-            <a class="social-link" href="https://twitter.com/SoftikaDev" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-              <span class="icon-slot" data-icon="twitter" data-size="24"></span>
-            </a>
-            <a class="social-link" href="https://www.facebook.com/profile.php?id=61555499463949" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <span class="icon-slot" data-icon="facebook" data-size="24"></span>
-            </a>
-          </div>
-
-          <p class="footer-copy">All rights reserved &copy; <span data-current-year></span>, Softika Team</p>
-        </div>
-      </footer>
-    </div>
-
-    <button class="scroll-top-btn" data-scroll-top type="button" aria-label="Scroll to top" hidden>
-      <span class="icon-slot" data-icon="arrow-up" data-size="24"></span>
-    </button>
-
-    <script type="module" src="/src/main.js"></script>
-  </body>
+        <script type="module" src="/src/main.js"></script>
+    </body>
 </html>

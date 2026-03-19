@@ -113,9 +113,7 @@
                     <nav class="desktop-nav" aria-label="Main navigation">
                         <a class="nav-link" data-nav-link href="/">Home</a>
                         <a class="nav-link" data-nav-link href="/team/">Team</a>
-                        <a class="nav-link" data-nav-link href="/blog/"
-                            >Blog</a
-                        >
+                        <a class="nav-link" data-nav-link href="/blog/">Blog</a>
                         <a class="nav-link" data-nav-link href="/contact/"
                             >Contact</a
                         >
@@ -239,10 +237,10 @@
                         <div class="blog-post-body">
                             <p class="blog-post-lead">
                                 In January 2026, OpenClaw crossed 100,000 GitHub
-                                stars in under two weeks. By February,
-                                security researchers had found over 21,000
-                                publicly exposed instances leaking API keys and
-                                OAuth tokens. A critical remote code execution
+                                stars in under two weeks. By February, security
+                                researchers had found over 21,000 publicly
+                                exposed instances leaking API keys and OAuth
+                                tokens. A critical remote code execution
                                 vulnerability scored 8.8 on the CVSS scale. And
                                 341 malicious skills had already been planted in
                                 the official marketplace. This is the story of
@@ -320,8 +318,8 @@
                                     <strong>February 2026:</strong> Security
                                     researchers identified 21,639 publicly
                                     accessible OpenClaw instances in the first
-                                    wave — a number that grew to over 42,000
-                                    by the time CVE-2026-25253 was publicly
+                                    wave — a number that grew to over 42,000 by
+                                    the time CVE-2026-25253 was publicly
                                     disclosed. Many were leaking API keys, OAuth
                                     tokens, and plaintext credentials.
                                 </li>
@@ -340,10 +338,10 @@
                             <h3>1. Exposed Gateway Instances</h3>
 
                             <p>
-                                OpenClaw runs a gateway server on port 18789.
-                                If that port is reachable from the internet,
-                                with a weak or default token, an attacker gets
-                                full control of your agent. They can read your
+                                OpenClaw runs a gateway server on port 18789. If
+                                that port is reachable from the internet, with a
+                                weak or default token, an attacker gets full
+                                control of your agent. They can read your
                                 messages, access your connected services, and
                                 execute arbitrary commands on your machine.
                             </p>
@@ -412,8 +410,8 @@
                                 If you're going to run OpenClaw, here's the
                                 minimum you should do before your first session.
                                 All configuration changes below go in
-                                <code>~/.openclaw/openclaw.json</code>, the
-                                main config file. You can also edit it via
+                                <code>~/.openclaw/openclaw.json</code>, the main
+                                config file. You can also edit it via
                                 <code>openclaw config get/set</code> from the
                                 command line.
                             </p>
@@ -436,9 +434,9 @@ gateway: {
                             <p>
                                 Rotate <code>gateway.auth.token</code>
                                 regularly. Never hard-code tokens in containers.
-                                Use Kubernetes Secrets or a vault like
-                                HashiCorp Vault. Set up firewall rules to block
-                                port 18789 from any non-local traffic.
+                                Use Kubernetes Secrets or a vault like HashiCorp
+                                Vault. Set up firewall rules to block port 18789
+                                from any non-local traffic.
                             </p>
 
                             <h3>Restrict Tool Access</h3>
@@ -458,8 +456,8 @@ tools.elevated: []</code></pre>
                                 <code>apply_patch</code> unless strictly
                                 required. Block destructive capabilities like
                                 <code>write</code>, <code>edit</code>, and
-                                <code>process</code> by default, then grant
-                                them per-agent only where justified.
+                                <code>process</code> by default, then grant them
+                                per-agent only where justified.
                             </p>
 
                             <h3>Enable Sandboxing</h3>
@@ -472,9 +470,9 @@ tools.elevated: []</code></pre>
                             <ul>
                                 <li>
                                     <strong>Off</strong> &mdash; no isolation.
-                                    Only acceptable for single-user local
-                                    setups where you trust yourself not to
-                                    install anything malicious.
+                                    Only acceptable for single-user local setups
+                                    where you trust yourself not to install
+                                    anything malicious.
                                 </li>
                                 <li>
                                     <strong>Non-main</strong> (default) &mdash;
@@ -491,9 +489,8 @@ tools.elevated: []</code></pre>
                             </ul>
 
                             <p>
-                                For any agent that processes messages from
-                                other people, use <code>"all"</code>. No
-                                exceptions.
+                                For any agent that processes messages from other
+                                people, use <code>"all"</code>. No exceptions.
                             </p>
 
                             <h3>Secure the State Directory</h3>
@@ -566,11 +563,17 @@ openclaw sandbox explain</code></pre>
 
                             <ul>
                                 <li>
-                                    Run as a non-root user
-                                    (<code>runAsUser: 1000</code>)
+                                    Run as a non-root user (<code
+                                        >runAsUser: 1000</code
+                                    >)
                                 </li>
-                                <li>Use a read-only filesystem where possible</li>
-                                <li>Drop all capabilities and add back only what's needed</li>
+                                <li>
+                                    Use a read-only filesystem where possible
+                                </li>
+                                <li>
+                                    Drop all capabilities and add back only
+                                    what's needed
+                                </li>
                                 <li>Mount volumes with strict, narrow paths</li>
                                 <li>
                                     Restrict outbound network access to only
@@ -579,11 +582,11 @@ openclaw sandbox explain</code></pre>
                             </ul>
 
                             <p>
-                                For production or team deployments, a
-                                Kubernetes setup with separate pods per agent,
-                                persistent volume claims for state, and
-                                proper RBAC gives you the isolation guarantees
-                                that a single Docker container cannot.
+                                For production or team deployments, a Kubernetes
+                                setup with separate pods per agent, persistent
+                                volume claims for state, and proper RBAC gives
+                                you the isolation guarantees that a single
+                                Docker container cannot.
                             </p>
 
                             <h2>The Corporate Risk: Shadow AI Agents</h2>
@@ -595,18 +598,18 @@ openclaw sandbox explain</code></pre>
                             </p>
 
                             <p>
-                                When an employee connects OpenClaw to their
-                                work Slack, Gmail, or Google Drive, the agent
-                                gains access to Slack messages and files,
-                                emails and calendar entries, cloud-stored
-                                documents, and OAuth tokens that enable lateral
-                                movement across services. Traditional security
-                                tools don't catch this. Endpoint security sees
-                                processes but doesn't understand agent
-                                behaviour. Network tools see API calls but
-                                can't distinguish legitimate automation from
-                                compromise. Identity systems see OAuth grants
-                                but don't flag AI agent connections as unusual.
+                                When an employee connects OpenClaw to their work
+                                Slack, Gmail, or Google Drive, the agent gains
+                                access to Slack messages and files, emails and
+                                calendar entries, cloud-stored documents, and
+                                OAuth tokens that enable lateral movement across
+                                services. Traditional security tools don't catch
+                                this. Endpoint security sees processes but
+                                doesn't understand agent behaviour. Network
+                                tools see API calls but can't distinguish
+                                legitimate automation from compromise. Identity
+                                systems see OAuth grants but don't flag AI agent
+                                connections as unusual.
                             </p>
 
                             <p>
@@ -627,7 +630,10 @@ openclaw sandbox explain</code></pre>
                             <ul>
                                 <li>Gateway bound to localhost only</li>
                                 <li>Strong, rotated authentication token</li>
-                                <li>Firewall rules blocking port 18789 externally</li>
+                                <li>
+                                    Firewall rules blocking port 18789
+                                    externally
+                                </li>
                                 <li>
                                     <code>~/.openclaw</code> directory at 700
                                     permissions
@@ -638,9 +644,7 @@ openclaw sandbox explain</code></pre>
                                     external-facing agents
                                 </li>
                                 <li>DM policy set to <code>"pairing"</code></li>
-                                <li>
-                                    No secrets in plaintext workspace files
-                                </li>
+                                <li>No secrets in plaintext workspace files</li>
                                 <li>
                                     <code>openclaw security audit</code> passing
                                     clean
@@ -735,7 +739,6 @@ openclaw sandbox explain</code></pre>
                         <a class="footer-link" href="/policy/"
                             >Privacy Policy</a
                         >
-                        <a class="footer-link" href="/imprint/">Imprint</a>
                     </nav>
 
                     <div class="footer-social">
