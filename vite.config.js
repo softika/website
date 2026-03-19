@@ -12,6 +12,7 @@ export default defineConfig({
         imprint: resolve(__dirname, 'imprint/index.html'),
         blog: resolve(__dirname, 'blog/index.html'),
         'blog-ai-agents-marketing': resolve(__dirname, 'blog/ai-agents-marketing/index.html'),
+        'blog-openclaw-security': resolve(__dirname, 'blog/openclaw-security/index.html'),
       },
     },
   },
