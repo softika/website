@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /policy/
 
 Sitemap: https://www.softika.dev/sitemap.xml

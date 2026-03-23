@@ -1,0 +1,28 @@
+# Softika
+
+> Softika is a software development studio specializing in AI agent development, secure automation pipelines, and scalable SaaS products. Founded as Softika Software Development e.U., the company delivers production-grade engineering for teams building intelligent systems.
+
+## Core Services
+
+- **AI Agents & Automation**: Multi-agent orchestration, LLM tool-calling pipelines, RAG and knowledge systems, human-in-the-loop workflows.
+- **Agent Security & Guardrails**: Prompt injection defense, tool permission boundaries, output sanitization, compliance and audit logging.
+- **SaaS Product Engineering**: Multi-tenant architecture, payment and billing integration, analytics dashboards, zero-downtime deployments.
+- **Platform & DevOps**: Kubernetes and containers, CI/CD automation, infrastructure as code, monitoring and alerting.
+
+## Key Pages
+
+- Homepage: https://www.softika.dev/
+- Team & Expertise: https://www.softika.dev/team/
+- Blog: https://www.softika.dev/blog/
+- Contact: https://www.softika.dev/contact/
+
+## Blog Posts
+
+- [AI Agents, Claude, and the Future of Marketing Automation](https://www.softika.dev/blog/ai-agents-marketing/) — How autonomous AI agents can automate day-to-day marketing tasks.
+- [OpenClaw Security: How to Install It Without Getting Hacked](https://www.softika.dev/blog/openclaw-security/) — Security analysis and hardening guide for OpenClaw AI agent installations.
+
+## Contact
+
+- Email: office@softika.dev
+- Location: Vienna, Austria
+- LinkedIn: https://www.linkedin.com/company/softika

@@ -462,6 +462,20 @@ img {
     border-radius: var(--radius-lg);
 }
 
+.case-studies-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+.case-study-card {
+    padding: 2rem;
+    background: transparent;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+}
+
 .service-line {
     display: flex;
     align-items: flex-start;
@@ -891,6 +905,10 @@ img {
     }
 
     .trust-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .case-studies-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
